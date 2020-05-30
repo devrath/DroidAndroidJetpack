@@ -1,4 +1,4 @@
-package com.demo.sample
+package com.demo.sample.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,6 +13,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initOnCreate()
+    }
+
+    /** Init OnCreate **/
+    private fun initOnCreate() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.textId.setOnClickListener {
