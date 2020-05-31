@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/frgMain2"
+    android:id="@+id/nav_graph">
+    <fragment
+        android:id="@+id/frgChooseRecipient2"
+        android:name="com.demo.sample.fragments.FrgChooseRecipient"
+        android:label="fragment_choose_recipient"
+        tools:layout="@layout/fragment_choose_recipient" >
+        <action
+            android:id="@+id/action_frgChooseRecipient2_to_frgConfirmation"
+            app:destination="@id/frgConfirmation" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgViewTransaction2"
+        android:name="com.demo.sample.fragments.FrgViewTransaction"
+        android:label="fragment_view_transaction"
+        tools:layout="@layout/fragment_view_transaction" />
+    <fragment
+        android:id="@+id/frgConfirmation"
+        android:name="com.demo.sample.fragments.FrgConfirmation"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation" />
+    <fragment
+        android:id="@+id/frgMain2"
+        android:name="com.demo.sample.fragments.FrgMain"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_frgMain2_to_frgSpecifyAmount"
+            app:destination="@id/frgSpecifyAmount" />
+        <action
+            android:id="@+id/action_frgMain2_to_frgViewTransaction2"
+            app:destination="@id/frgViewTransaction2" />
+        <action
+            android:id="@+id/action_frgMain2_to_frgBalance2"
+            app:destination="@id/frgBalance2" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgSpecifyAmount"
+        android:name="com.demo.sample.fragments.FrgSpecifyAmount"
+        android:label="fragment_specify_amount"
+        tools:layout="@layout/fragment_specify_amount" >
+        <action
+            android:id="@+id/action_frgSpecifyAmount_to_frgChooseRecipient2"
+            app:destination="@id/frgChooseRecipient2" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgBalance2"
+        android:name="com.demo.sample.fragments.FrgBalance"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_balance" />
 </navigation>

@@ -20,8 +20,6 @@ class MainActivity : AppCompatActivity() {
     private fun initOnCreate() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.textId.setOnClickListener {
-            Toast.makeText(this,"Hello",Toast.LENGTH_LONG).show()
-        }
+
     }
 }
