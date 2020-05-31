@@ -1,16 +1,26 @@
 package com.demo.sample.fragments
 
+import android.app.Activity
+import android.content.Context
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.demo.sample.R
 import com.demo.sample.databinding.FragmentChooseRecipientBinding
 import com.demo.sample.databinding.FragmentSpecifyAmountBinding
+import com.demo.sample.utils.Utils
+import com.demo.sample.utils.Utils.hideKeyboard
+import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.fragment_specify_amount.*
 import kotlinx.android.synthetic.main.fragment_specify_amount.view.*
+import kotlinx.android.synthetic.main.fragment_specify_amount.view.specifyAmountId
 
 class FrgSpecifyAmount : Fragment() , View.OnClickListener {
 
@@ -44,7 +54,16 @@ class FrgSpecifyAmount : Fragment() , View.OnClickListener {
 
     override fun onClick(v: View?) {
         when(v?.id){
-            R.id.btnNext -> navController.navigate(R.id.action_frgSpecifyAmount_to_frgChooseRecipient2)
+            R.id.btnNext -> {
+                if(!TextUtils.isEmpty(specifyAmountId.text.toString())){
+                    val amount = specifyAmountId.text.toString().toInt()
+                    val bundle = bundleOf("amount" to amount)
+                    navController.navigate(R.id.action_frgSpecifyAmount_to_frgChooseRecipient2,bundle)
+                }else{
+                    activity?.let { hideKeyboard(it,btnNext) }
+                    Utils.snack(btnNext,"Please enter amount")
+                }
+            }
             R.id.btnCancel -> activity?.onBackPressed()
         }
     }
@@ -58,6 +77,8 @@ class FrgSpecifyAmount : Fragment() , View.OnClickListener {
        binding.btnNext.setOnClickListener(this)
        binding.btnCancel.setOnClickListener(this)
     }
+
+
 
 
 }

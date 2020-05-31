@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/reciepentNameId"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -39,7 +39,7 @@
         app:layout_constraintEnd_toStartOf="@+id/recipientCancel"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/reciepentNameId"
         app:layout_constraintVertical_bias="0.151" />
 
     <Button
