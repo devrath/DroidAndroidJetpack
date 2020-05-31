@@ -2,16 +2,20 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/frgMain2"
-    android:id="@+id/nav_graph">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/frgMain2">
     <fragment
         android:id="@+id/frgChooseRecipient2"
         android:name="com.demo.sample.fragments.FrgChooseRecipient"
         android:label="fragment_choose_recipient"
-        tools:layout="@layout/fragment_choose_recipient" >
+        tools:layout="@layout/fragment_choose_recipient">
         <action
             android:id="@+id/action_frgChooseRecipient2_to_frgConfirmation"
-            app:destination="@id/frgConfirmation" />
+            app:destination="@id/frgConfirmation"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/frgViewTransaction2"
@@ -27,25 +31,41 @@
         android:id="@+id/frgMain2"
         android:name="com.demo.sample.fragments.FrgMain"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_frgMain2_to_frgSpecifyAmount"
-            app:destination="@id/frgSpecifyAmount" />
+            app:destination="@id/frgSpecifyAmount"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
         <action
             android:id="@+id/action_frgMain2_to_frgViewTransaction2"
-            app:destination="@id/frgViewTransaction2" />
+            app:destination="@id/frgViewTransaction2"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
         <action
             android:id="@+id/action_frgMain2_to_frgBalance2"
-            app:destination="@id/frgBalance2" />
+            app:destination="@id/frgBalance2"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/frgSpecifyAmount"
         android:name="com.demo.sample.fragments.FrgSpecifyAmount"
         android:label="fragment_specify_amount"
-        tools:layout="@layout/fragment_specify_amount" >
+        tools:layout="@layout/fragment_specify_amount">
         <action
             android:id="@+id/action_frgSpecifyAmount_to_frgChooseRecipient2"
-            app:destination="@id/frgChooseRecipient2" />
+            app:destination="@id/frgChooseRecipient2"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/frgBalance2"
