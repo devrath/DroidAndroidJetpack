@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">code</string>
+    <string name="app_name">Navigation</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
 </resources>
