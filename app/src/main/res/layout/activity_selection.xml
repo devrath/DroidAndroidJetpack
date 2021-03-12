@@ -11,7 +11,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/startSingleNetworkCallActivity"
+            android:id="@+id/navDrawerActivity"
             android:text="@string/navigation_drawer"
             style="@style/launchBtnStyle"/>
 

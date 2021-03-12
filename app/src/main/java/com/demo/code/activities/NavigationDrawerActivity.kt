@@ -7,6 +7,6 @@ import com.demo.code.base.BaseActivity
 class NavigationDrawerActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_navigation_drawer)
     }
 }
