@@ -1,18 +1,3 @@
 <resources>
-    <string name="app_name">Sample</string>
-    <string name="str_view_transactions">View Transactions</string>
-    <string name="str_send_money">Send Money</string>
-    <string name="str_view_balance">View Balance</string>
-    <string name="str_food">Food</string>
-    <string name="str_data">Data</string>
-    <string name="str_rent">Rent</string>
-    <string name="str_candles">Candles</string>
-    <string name="str_utility">Utility</string>
-    <string name="str_amount_sample">200</string>
-    <string name="str_recipient">Recipient</string>
-    <string name="str_name">Name</string>
-    <string name="str_next">Next</string>
-    <string name="str_cancel">Cancel</string>
-    <string name="str_amount">Amount</string>
-    <string name="str_was_sent">was sent</string>
+    <string name="app_name">code</string>
 </resources>

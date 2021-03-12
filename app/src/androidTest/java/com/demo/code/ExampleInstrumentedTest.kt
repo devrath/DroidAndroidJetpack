@@ -1,4 +1,4 @@
-package com.demo.sample
+package com.demo.code
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.demo.sample", appContext.packageName)
+        assertEquals("com.demo.code", appContext.packageName)
     }
 }
