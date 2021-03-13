@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.NestedNavigationActivity"/>
         <activity android:name=".activities.NavigationDrawerActivity"/>
+        <activity android:name=".activities.TwoFragmentContainerActivity"/>
     </application>
 
 </manifest>
