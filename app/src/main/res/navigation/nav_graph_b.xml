@@ -12,11 +12,27 @@
         <action
             android:id="@+id/action_fragmentBId_to_fragmentD"
             app:destination="@id/fragmentD" />
+        <action
+            android:id="@+id/action_fragmentBId_to_fragmentE"
+            app:destination="@id/fragmentE" />
+        <action
+            android:id="@+id/action_fragmentBId_to_fragmentF"
+            app:destination="@id/fragmentF" />
     </fragment>
     <fragment
         android:id="@+id/fragmentD"
         android:name="com.demo.code.fragments.FragmentD"
         android:label="fragment_layout_d"
         tools:layout="@layout/fragment_layout_d" />
+    <fragment
+        android:id="@+id/fragmentE"
+        android:name="com.demo.code.fragments.FragmentE"
+        android:label="FragmentE"
+        tools:layout="@layout/fragment_layout_e"/>
+    <fragment
+        android:id="@+id/fragmentF"
+        android:name="com.demo.code.fragments.FragmentF"
+        android:label="FragmentF"
+        tools:layout="@layout/fragment_layout_f"/>
 
 </navigation>

@@ -1,24 +1,23 @@
 package com.demo.code.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.demo.code.R
-import com.demo.code.databinding.FragmentLayoutDBinding
+import androidx.fragment.app.Fragment
+import com.demo.code.databinding.FragmentLayoutFBinding
+import com.demo.code.utils.extensions.toast
 
-class FragmentD : Fragment() {
+class FragmentF : Fragment() {
 
-    private var _binding: FragmentLayoutDBinding? = null
+    private var _binding: FragmentLayoutFBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentLayoutDBinding.inflate(inflater, container, false)
+        _binding = FragmentLayoutFBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -26,7 +25,9 @@ class FragmentD : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             this.FragmentDNextId.setOnClickListener{
-                findNavController().navigate(R.id.fragmentE)
+                activity?.let {
+                    toast("Last Fragment",false,it)
+                }
             }
             this.FragmentDBackId.setOnClickListener{
 

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.demo.code.databinding.FragmentLayoutCBinding
+import com.demo.code.utils.extensions.toast
 
 class FragmentC : Fragment() {
 
@@ -24,7 +25,9 @@ class FragmentC : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             this.FragmentCNextId.setOnClickListener{
-
+                activity?.let {
+                    toast("Last Fragment",false,it)
+                }
             }
             this.FragmentCBackId.setOnClickListener{
 
