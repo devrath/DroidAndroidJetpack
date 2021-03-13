@@ -23,7 +23,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_fragment_a">FRAGMENT-A</string>
+    <string name="menu_fragment_b">FRAGMENT-B</string>
+    <string name="menu_fragment_c">FRAGMENT-C</string>
 </resources>
