@@ -10,4 +10,5 @@
     <string name="fragment_b">FRAGMENT-B</string>
     <string name="fragment_c">FRAGMENT-C</string>
     <string name="fragment_d">FRAGMENT-D</string>
+    <string name="back">Back</string>
 </resources>

@@ -20,6 +20,18 @@ class FragmentD : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+            this.FragmentDNextId.setOnClickListener{
+
+            }
+            this.FragmentDBackId.setOnClickListener{
+
+            }
+        }
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

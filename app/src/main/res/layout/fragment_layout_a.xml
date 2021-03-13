@@ -20,4 +20,10 @@
         android:layout_height="wrap_content"
         android:textAllCaps="true"
         android:text="@string/next"/>
+    <Button
+        android:id="@+id/FragmentABackId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/back"/>
 </LinearLayout>

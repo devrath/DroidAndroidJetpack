@@ -18,6 +18,18 @@ class FragmentB : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+            this.FragmentBNextId.setOnClickListener{
+
+            }
+            this.FragmentBBackId.setOnClickListener{
+
+            }
+        }
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
