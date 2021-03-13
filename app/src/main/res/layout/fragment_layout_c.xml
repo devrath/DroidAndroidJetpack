@@ -5,12 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@color/md_cyan_800"
     tools:context=".fragments.FragmentC">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textColor="@color/white"
         android:text="@string/fragment_c" />
     <Button
         android:id="@+id/FragmentCNextId"
