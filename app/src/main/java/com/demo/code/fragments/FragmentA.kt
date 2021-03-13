@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.demo.code.R
 import com.demo.code.databinding.FragmentLayoutABinding
 
 class FragmentA : Fragment() {
@@ -22,7 +24,7 @@ class FragmentA : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             this.FragmentANextId.setOnClickListener{
-
+                findNavController().navigate(R.id.fragmentC)
             }
             this.FragmentABackId.setOnClickListener{
 
