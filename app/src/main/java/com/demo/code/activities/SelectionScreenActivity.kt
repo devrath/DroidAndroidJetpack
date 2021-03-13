@@ -22,11 +22,13 @@ class SelectionScreenActivity : BaseActivity() , View.OnClickListener {
 
     private fun setClickListener() {
         binding.navDrawerActivity.setOnClickListener(this)
+        binding.navNestedActivity.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
         when(view?.id){
             R.id.navDrawerActivity -> openActivity(NavigationDrawerActivity::class.java)
+            R.id.navNestedActivity -> openActivity(NestedNavigationActivity::class.java)
         }
     }
 }

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Navigation</string>
     <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="nested_navigation">Nested Navigation</string>
 </resources>

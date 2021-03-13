@@ -15,5 +15,10 @@
             android:text="@string/navigation_drawer"
             style="@style/launchBtnStyle"/>
 
+        <Button
+            android:id="@+id/navNestedActivity"
+            android:text="@string/nested_navigation"
+            style="@style/launchBtnStyle"/>
+
     </LinearLayout>
 </ScrollView>
