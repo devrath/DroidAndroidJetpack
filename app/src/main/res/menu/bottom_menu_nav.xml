@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
     <item android:id="@+id/fragmentA"
-        android:title="Home"
+        android:title="@string/home"
         app:showAsAction="always"
         android:orderInCategory="1"
         android:icon="@drawable/ic_menu_camera"/>
 
     <item android:id="@+id/fragmentB"
-        android:title="Explore"
+        android:title="@string/explore"
         app:showAsAction="always"
         android:orderInCategory="2"
         android:icon="@drawable/ic_menu_gallery"/>
 
 
     <item android:id="@+id/fragmentC"
-        android:title="More"
+        android:title="@string/more"
         app:showAsAction="always"
         android:orderInCategory="2"
         android:icon="@drawable/ic_menu_slideshow"/>

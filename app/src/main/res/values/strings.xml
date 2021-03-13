@@ -27,4 +27,7 @@
     <string name="menu_fragment_b">FRAGMENT-B</string>
     <string name="menu_fragment_c">FRAGMENT-C</string>
     <string name="bottom_navigation_view">Bottom navigation view</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="more">More</string>
 </resources>
