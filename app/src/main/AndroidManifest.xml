@@ -7,9 +7,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Code">
-        <activity android:name=".activities.SelectionScreenActivity">
+        android:supportsRtl="true">
+        <activity
+            android:name=".activities.SelectionScreenActivity"
+            android:theme="@style/Theme.Code">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,8 +18,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.NavigationDrawerActivity"/>
-        <activity android:name=".activities.TwoFragmentContainerActivity"/>
+        <activity
+            android:name=".activities.NavigationDrawerActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".activities.TwoFragmentContainerActivity"
+            android:theme="@style/Theme.Code" />
     </application>
 
 </manifest>
