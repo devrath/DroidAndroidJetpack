@@ -26,4 +26,5 @@
     <string name="menu_fragment_a">FRAGMENT-A</string>
     <string name="menu_fragment_b">FRAGMENT-B</string>
     <string name="menu_fragment_c">FRAGMENT-C</string>
+    <string name="bottom_navigation_view">Bottom navigation view</string>
 </resources>

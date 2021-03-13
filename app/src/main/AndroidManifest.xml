@@ -24,6 +24,9 @@
         <activity
             android:name=".activities.TwoFragmentContainerActivity"
             android:theme="@style/Theme.Code" />
+        <activity
+            android:name=".activities.BottomNavigationActivity"
+            android:theme="@style/Theme.Code" />
     </application>
 
 </manifest>

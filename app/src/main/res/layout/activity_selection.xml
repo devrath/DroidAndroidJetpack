@@ -20,5 +20,10 @@
             android:text="@string/navigation_two_containers"
             style="@style/launchBtnStyle"/>
 
+        <Button
+            android:id="@+id/navBottomNavigationActivity"
+            android:text="@string/bottom_navigation_view"
+            style="@style/launchBtnStyle"/>
+
     </LinearLayout>
 </ScrollView>

@@ -21,12 +21,14 @@ class SelectionScreenActivity : BaseActivity() , View.OnClickListener {
     private fun setClickListener() {
         binding.navDrawerActivity.setOnClickListener(this)
         binding.navTwoContainerActivity.setOnClickListener(this)
+        binding.navBottomNavigationActivity.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
         when(view?.id){
             R.id.navDrawerActivity -> openActivity(NavigationDrawerActivity::class.java)
             R.id.navTwoContainerActivity -> openActivity(TwoFragmentContainerActivity::class.java)
+            R.id.navBottomNavigationActivity -> openActivity(BottomNavigationActivity::class.java)
         }
     }
 }

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/fragmentA">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.demo.code.fragments.FragmentA"
+        android:label="@string/fragment_a"
+        tools:layout="@layout/fragment_layout_a" >
+        <action
+            android:id="@+id/action_fragmentAId_to_fragmentC"
+            app:destination="@id/fragmentC" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.demo.code.fragments.FragmentB"
+        android:label="@string/fragment_b"
+        tools:layout="@layout/fragment_layout_b" >
+        <action
+            android:id="@+id/action_fragmentBId_to_fragmentD"
+            app:destination="@id/fragmentD" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.demo.code.fragments.FragmentC"
+        android:label="@string/fragment_c"
+        tools:layout="@layout/fragment_layout_c" />
+
+    <fragment
+        android:id="@+id/fragmentD"
+        android:name="com.demo.code.fragments.FragmentD"
+        android:label="@string/fragment_d"
+        tools:layout="@layout/fragment_layout_d" >
+        <action
+            android:id="@+id/action_fragmentDId_to_fragmentE"
+            app:destination="@id/fragmentE" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentE"
+        android:name="com.demo.code.fragments.FragmentE"
+        android:label="@string/fragment_e"
+        tools:layout="@layout/fragment_layout_e" >
+
+        <action
+            android:id="@+id/action_fragmentEId_to_fragmentF"
+            app:destination="@id/fragmentF" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentF"
+        android:name="com.demo.code.fragments.FragmentF"
+        android:label="@string/fragment_f"
+        tools:layout="@layout/fragment_layout_f" />
+
+</navigation>
