@@ -18,7 +18,6 @@ class SelectionScreenActivity : BaseActivity() , View.OnClickListener {
         setClickListener()
     }
 
-
     private fun setClickListener() {
         binding.navDrawerActivity.setOnClickListener(this)
         binding.navTwoContainerActivity.setOnClickListener(this)

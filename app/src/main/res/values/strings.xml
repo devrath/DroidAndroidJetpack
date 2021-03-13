@@ -3,4 +3,11 @@
     <string name="navigation_drawer">Navigation Drawer</string>
     <string name="nested_navigation">Nested Navigation</string>
     <string name="navigation_two_containers">Navigation two containers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">Next</string>
+    <string name="fragment_a">FRAGMENT-A</string>
+    <string name="fragment_b">FRAGMENT-B</string>
+    <string name="fragment_c">FRAGMENT-C</string>
+    <string name="fragment_d">FRAGMENT-D</string>
 </resources>
