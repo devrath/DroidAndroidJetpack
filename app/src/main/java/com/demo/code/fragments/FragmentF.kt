@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.demo.code.databinding.FragmentLayoutFBinding
 import com.demo.code.utils.extensions.toast
 
@@ -30,7 +31,7 @@ class FragmentF : Fragment() {
                 }
             }
             this.FragmentDBackId.setOnClickListener{
-
+                findNavController().popBackStack()
             }
         }
     }

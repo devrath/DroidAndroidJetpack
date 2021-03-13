@@ -29,7 +29,7 @@ class FragmentD : Fragment() {
                 findNavController().navigate(R.id.fragmentE)
             }
             this.FragmentDBackId.setOnClickListener{
-
+                findNavController().popBackStack()
             }
         }
     }
