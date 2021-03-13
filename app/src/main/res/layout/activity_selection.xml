@@ -16,8 +16,8 @@
             style="@style/launchBtnStyle"/>
 
         <Button
-            android:id="@+id/navNestedActivity"
-            android:text="@string/nested_navigation"
+            android:id="@+id/navTwoContainerActivity"
+            android:text="@string/navigation_two_containers"
             style="@style/launchBtnStyle"/>
 
     </LinearLayout>

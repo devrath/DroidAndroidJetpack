@@ -1,6 +1,5 @@
 package com.demo.code.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.demo.code.R
@@ -22,13 +21,13 @@ class SelectionScreenActivity : BaseActivity() , View.OnClickListener {
 
     private fun setClickListener() {
         binding.navDrawerActivity.setOnClickListener(this)
-        binding.navNestedActivity.setOnClickListener(this)
+        binding.navTwoContainerActivity.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
         when(view?.id){
             R.id.navDrawerActivity -> openActivity(NavigationDrawerActivity::class.java)
-            R.id.navNestedActivity -> openActivity(NestedNavigationActivity::class.java)
+            R.id.navTwoContainerActivity -> openActivity(TwoFragmentContainerActivity::class.java)
         }
     }
 }

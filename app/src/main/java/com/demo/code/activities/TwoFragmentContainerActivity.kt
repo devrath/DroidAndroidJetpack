@@ -4,9 +4,9 @@ import android.os.Bundle
 import com.demo.code.R
 import com.demo.code.base.BaseActivity
 
-class NestedNavigationActivity: BaseActivity() {
+class TwoFragmentContainerActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nav_nested)
+        setContentView(R.layout.activity_two_frag_containers)
     }
 }
