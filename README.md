@@ -14,6 +14,7 @@
 
 * Android developers are very much aware that managing the life cycles is not an easy task in android, This collection of libraries help in managing activity lifecycle so that developers can focus more on logic. The libraries take care of handeling configuration changes. Also helping in preventing memory leaks. collectively the complex things are made simple. 
 
+#### Here is a video below describing about android jetpack
 
 <a href="https://www.youtube.com/watch?v=r8U5Rtcr5UU"><img src="http://i3.ytimg.com/vi/r8U5Rtcr5UU/maxresdefault.jpg" 
 alt="Developers" /></a>
