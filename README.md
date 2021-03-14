@@ -22,8 +22,10 @@ Quick Reference
 
 #### Here is a video below describing about android jetpack
 
-<a href="https://www.youtube.com/watch?v=r8U5Rtcr5UU"><img src="http://i3.ytimg.com/vi/r8U5Rtcr5UU/maxresdefault.jpg" 
+<p align="left">
+<a href="https://www.youtube.com/watch?v=r8U5Rtcr5UU"><img width="380" height="220" src="http://i3.ytimg.com/vi/r8U5Rtcr5UU/maxresdefault.jpg" 
 alt="Developers" /></a>
+</p>
 
 ---
 
@@ -41,7 +43,10 @@ dependencies {
 ---
 <h2>Jetpack Navigation</h2>
 
-![Jetpack Navigation](images/jetpacknavigation.png)
+<p align="center">
+  <img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/jetpacknavigation.png">
+</p>
+
 
 #### What is Jetpack navigation
 * This component handles the user-app journey. When the user navigates in the application, the user will go from one screen to another screen based on the complexity of application. 
@@ -60,7 +65,9 @@ dependencies {
 
 #### How does it work 
 
-![Jetpack Navigation Components](images/navigationgraph.png)
+<p align="left">
+  <img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/navigationgraph.png">
+</p>
 
 * In the image above we can see that there is representation of flow based on user actions.
 * There is a `activity` -> `This activity has a container for the fragment` -> all the screen flows reside in this container
@@ -75,5 +82,7 @@ dependencies {
 ---
 <h2>Lifecycle-Aware Components</h2>
 
-![Lifecycle-Aware Components](images/android_jetpack_lifecycle.jpeg)
+<p align="center">
+  <img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/android_jetpack_lifecycle.jpeg">
+</p>
 
