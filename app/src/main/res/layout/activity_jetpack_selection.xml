@@ -4,28 +4,22 @@
     android:layout_height="match_parent"
     android:fadeScrollbars="false"
     android:fitsSystemWindows="true"
-    android:layout_gravity="center"
     android:padding="@dimen/screen_padding">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/navDrawerActivity"
-            android:text="@string/navigation_drawer"
+            android:id="@+id/jetpackNavigationId"
+            android:text="@string/navigation"
             style="@style/launchBtnStyle"/>
 
         <Button
-            android:id="@+id/navTwoContainerActivity"
-            android:text="@string/navigation_two_containers"
-            style="@style/launchBtnStyle"/>
-
-        <Button
-            android:id="@+id/navBottomNavigationActivity"
-            android:text="@string/bottom_navigation_view"
+            android:id="@+id/jetPackLifeCycleAwareId"
+            android:text="@string/life_cycle_aware_component"
             style="@style/launchBtnStyle"/>
 
     </LinearLayout>

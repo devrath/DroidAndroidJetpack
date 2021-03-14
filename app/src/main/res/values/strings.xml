@@ -3,7 +3,6 @@
     <string name="navigation_drawer">Navigation Drawer</string>
     <string name="nested_navigation">Nested Navigation</string>
     <string name="navigation_two_containers">Navigation two containers</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="next">Next</string>
     <string name="fragment_a">FRAGMENT-A</string>
@@ -13,16 +12,12 @@
     <string name="back">Back</string>
     <string name="fragment_e">FRAGMENT-E</string>
     <string name="fragment_f">FRAGMENT-F</string>
-
-
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_fragment_a">FRAGMENT-A</string>
     <string name="menu_fragment_b">FRAGMENT-B</string>
     <string name="menu_fragment_c">FRAGMENT-C</string>
@@ -30,4 +25,8 @@
     <string name="home">Home</string>
     <string name="explore">Explore</string>
     <string name="more">More</string>
+    <string name="navigation">Navigation</string>
+    <string name="life_cycle_aware_component">Life-cycle aware component</string>
+    <string name="android_jetpack">Android Jetpack</string>
+    <string name="life_cycle_aware">Life cycle aware component</string>
 </resources>
