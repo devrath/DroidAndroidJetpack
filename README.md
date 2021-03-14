@@ -67,3 +67,7 @@ dependencies {
  * **[TwoFragmentContainerActivity (To show how the app reacts in such scenario)](app/src/main/java/com/demo/code/navigation/activities/TwoFragmentContainerActivity.kt)**
 
 ---
+<h2>Lifecycle-Aware Components</h2>
+
+![Lifecycle-Aware Components](images/android_jetpack_lifecycle.jpeg)
+
