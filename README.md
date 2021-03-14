@@ -5,9 +5,11 @@
 ![Jetpack Navigation Components](images/android-jetpack.png)
 ---
 
-Quick Reference
 
-* [Navigation](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#jetpack-navigation "Navigation")
+| Quick Reference |
+| --- |
+| [Navigation](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#jetpack-navigation "Navigation") |
+
 
 ---
 
@@ -86,3 +88,24 @@ dependencies {
   <img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/android_jetpack_lifecycle.jpeg">
 </p>
 
+#### what are life-cycle aware components
+* Life cycle aware components perform actions in response to a change in the status of another component.
+* Components can be such as `activities` and `fragments`
+* They help to produce a better organized and light weight code which is easy to maintain.
+* Most of app components that are defined in the android framework have life cycles attached to them. life cycles are managed by the `operating system`, If the aplication dosen't follow the rules of the `os`, There may be possibility of memory leaks
+
+#### Building blocks of life-cycle aware components
+
+The life-cycle aware components are made of 3 main parts 
+
+| life-cycle | life-cycle owner | life-cycle observer |
+| --- | --- | --- |
+| It is a class that holds the information of the information of lifecycle states of components like fragment & activities | This defines the owner of the lifecycle. Activity/Fragment can be called as lifecycle owner | The lifecycle observer observes the state of the life cycle and here we can perform some operation |
+
+#### Use-cases of life-cycle aware components
+* Starting/Stopping the video buffering when the application starts and is visible, also stopping the buffering once application is destroyed
+* Handeling the location updates, when the application is in foreground /background
+
+#### What order the events are triggered of lifecycle aware components along with actual life-cycle events
+* In the activity creation phase, the activity `life-cycle events` are triggered first followed by the `observer events`
+* In the activity destruction phase, the `observer events` are triggered followed by the `life-cycle events`
