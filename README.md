@@ -116,6 +116,6 @@ The life-cycle aware components are made of 3 main parts
 * We can observe all the logic of Exoplayer is moved into the life-cycle aware component even though the life cycle is lifecycle aware 
 * This helps to organize our logic seperately 
 
- * **[Exoplayer Activity](app/src/main/java/com/demo/code/lifecycle/activities/ExoplayerActivity.kt)**
+**[Exoplayer Activity](app/src/main/java/com/demo/code/lifecycle/activities/ExoplayerActivity.kt)**
   <->**[Lifecycle-aware component](app/src/main/java/com/demo/code/lifecycle/util/ExoplayerActivityObserver.kt)**
   ---
