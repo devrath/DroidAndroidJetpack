@@ -109,3 +109,8 @@ The life-cycle aware components are made of 3 main parts
 #### What order the events are triggered of lifecycle aware components along with actual life-cycle events
 * In the activity creation phase, the activity `life-cycle events` are triggered first followed by the `observer events`
 * In the activity destruction phase, the `observer events` are triggered followed by the `life-cycle events`
+
+#### Demo represents how the life-cycle aware component is used
+ * **[Exoplayer Activity](app/src/main/java/com/demo/code/lifecycle/activities/ExoplayerActivity.kt)**
+  <->**[Lifecycle-aware component](app/src/main/java/com/demo/code/lifecycle/util/ExoplayerActivityObserver.kt)**
+  ---
