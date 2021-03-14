@@ -2,13 +2,14 @@
 
 # Android Jetpack
 
+![Jetpack Navigation Components](images/android-jetpack.png)
+---
+
 Quick Reference
 
 * [Navigation](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#jetpack-navigation "Navigation")
 
 ---
-
-![Jetpack Navigation Components](images/android-jetpack.png)
 
 
 #### What is Android Jetpack library?
