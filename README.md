@@ -2,7 +2,6 @@
 
 # Android Jetpack
 
----
 Quick Reference
 
 * [Navigation](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#jetpack-navigation "Navigation")
