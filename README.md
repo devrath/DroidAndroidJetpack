@@ -111,6 +111,11 @@ The life-cycle aware components are made of 3 main parts
 * In the activity destruction phase, the `observer events` are triggered followed by the `life-cycle events`
 
 #### Demo represents how the life-cycle aware component is used
+* Here we have a activity that is playing a video using the exo-player, This exoplayer is life-cycle aware 
+* Activity is binded to a life-cycle aware component
+* We can observe all the logic of Exoplayer is moved into the life-cycle aware component even though the life cycle is lifecycle aware 
+* This helps to organize our logic seperately 
+
  * **[Exoplayer Activity](app/src/main/java/com/demo/code/lifecycle/activities/ExoplayerActivity.kt)**
   <->**[Lifecycle-aware component](app/src/main/java/com/demo/code/lifecycle/util/ExoplayerActivityObserver.kt)**
   ---
