@@ -19,7 +19,13 @@
 <a href="https://www.youtube.com/watch?v=r8U5Rtcr5UU"><img src="http://i3.ytimg.com/vi/r8U5Rtcr5UU/maxresdefault.jpg" 
 alt="Developers" /></a>
 
+---
+Quick Reference
 
+* [Navigation](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#jetpack-navigation "Navigation")
+
+
+---
 
 #### Gradle setup
 
