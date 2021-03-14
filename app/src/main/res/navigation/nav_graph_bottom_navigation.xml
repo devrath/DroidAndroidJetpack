@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmentA"
-        android:name="com.demo.code.fragments.FragmentA"
+        android:name="com.demo.code.navigation.fragments.FragmentA"
         android:label="@string/fragment_a"
         tools:layout="@layout/fragment_layout_a" >
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/fragmentB"
-        android:name="com.demo.code.fragments.FragmentB"
+        android:name="com.demo.code.navigation.fragments.FragmentB"
         android:label="@string/fragment_b"
         tools:layout="@layout/fragment_layout_b" >
         <action
@@ -27,13 +27,13 @@
 
     <fragment
         android:id="@+id/fragmentC"
-        android:name="com.demo.code.fragments.FragmentC"
+        android:name="com.demo.code.navigation.fragments.FragmentC"
         android:label="@string/fragment_c"
         tools:layout="@layout/fragment_layout_c" />
 
     <fragment
         android:id="@+id/fragmentD"
-        android:name="com.demo.code.fragments.FragmentD"
+        android:name="com.demo.code.navigation.fragments.FragmentD"
         android:label="@string/fragment_d"
         tools:layout="@layout/fragment_layout_d" >
         <action
@@ -43,7 +43,7 @@
 
     <fragment
         android:id="@+id/fragmentE"
-        android:name="com.demo.code.fragments.FragmentE"
+        android:name="com.demo.code.navigation.fragments.FragmentE"
         android:label="@string/fragment_e"
         tools:layout="@layout/fragment_layout_e" >
 
@@ -54,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentF"
-        android:name="com.demo.code.fragments.FragmentF"
+        android:name="com.demo.code.navigation.fragments.FragmentF"
         android:label="@string/fragment_f"
         tools:layout="@layout/fragment_layout_f" />
 

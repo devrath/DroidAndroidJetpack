@@ -1,4 +1,4 @@
-package com.demo.code.fragments
+package com.demo.code.navigation.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

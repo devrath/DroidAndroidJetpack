@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmentBId"
-        android:name="com.demo.code.fragments.FragmentB"
+        android:name="com.demo.code.navigation.fragments.FragmentB"
         tools:layout="@layout/fragment_layout_b">
         <action
             android:id="@+id/action_fragmentBId_to_fragmentD"
@@ -21,17 +21,17 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentD"
-        android:name="com.demo.code.fragments.FragmentD"
+        android:name="com.demo.code.navigation.fragments.FragmentD"
         android:label="fragment_layout_d"
         tools:layout="@layout/fragment_layout_d" />
     <fragment
         android:id="@+id/fragmentE"
-        android:name="com.demo.code.fragments.FragmentE"
+        android:name="com.demo.code.navigation.fragments.FragmentE"
         android:label="FragmentE"
         tools:layout="@layout/fragment_layout_e"/>
     <fragment
         android:id="@+id/fragmentF"
-        android:name="com.demo.code.fragments.FragmentF"
+        android:name="com.demo.code.navigation.fragments.FragmentF"
         android:label="FragmentF"
         tools:layout="@layout/fragment_layout_f"/>
 

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/md_blue_800"
-    tools:context=".fragments.FragmentB">
+    tools:context=".navigation.fragments.FragmentB">
 
     <TextView
         android:layout_width="match_parent"

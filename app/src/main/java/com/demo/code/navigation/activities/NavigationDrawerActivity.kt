@@ -1,4 +1,4 @@
-package com.demo.code.activities
+package com.demo.code.navigation.activities
 
 import android.os.Bundle
 import android.view.Menu
