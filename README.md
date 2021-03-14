@@ -23,7 +23,7 @@ alt="Developers" /></a>
 
 #### Gradle setup
 
-```
+``` android
 dependencies {
     def lifecycle_version = "<Add the latest version here>"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
@@ -36,6 +36,30 @@ dependencies {
 <h2>Jetpack Navigation</h2>
 
 ![Jetpack Navigation](images/jetpacknavigation.png)
+
+#### What is Jetpack navigation
+* This component handles the user-app journey. When the user navigates in the application, the user will go from one screen to another screen based on the complexity of application. 
+* Earlier we used to use intents to move from screen to screen and the arguments to pass the sata along with it, Now navigation makes it much simple.
+* It uses the pattern where there is one activity nd multiple fragments.
+* It creates claees in background and via calling functions, we can move from screen to screen.
+* It handles complex cases like bottom tabbed navigation and App drawers, These navigation is handeled in a seamless way and developers do not have to worry about it.
+
+#### Benifits of jetpack Navigation
+* Handles fragment transaction by avoiding inconsistensies and memory leaks
+* Handles device back and up buttons
+* Handles back-stack
+* Handles argument passing
+* takes care of transistions animations
+* Easy way to implement deep-linking
+
+#### How does it work 
+
+![Jetpack Navigation Components](images/navigationgraph.png)
+
+* In the image above we can see that there is representation of flow based on user actions.
+* There is a `activity` -> `This activity has a container for the fragment` -> all the screen flows reside in this container
+* In the image above `title_screen` and based on the user action there can be two possibilities of navigation and so on.
+* Here important thing to note is `backstack` and `navigation` is taken care by the library, no matter how much complex the navigation hierarcy is, developer can rely on the navigation library.
 
 
 ---
