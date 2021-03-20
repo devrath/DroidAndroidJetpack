@@ -1,4 +1,4 @@
-package com.demo.code.utils.extensions
+package com.demo.extensions
 
 import android.view.View
 import androidx.annotation.StringRes

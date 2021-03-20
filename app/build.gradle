@@ -77,4 +77,10 @@ dependencies {
     androidTestImplementation androidTestLibraries.espresso
     androidTestImplementation androidTestLibraries.junit
     /** ****************** ANDROID TESTING STANDARD LIBRARIES ****************** **/
+
+    /** ****************** Modules ****************** **/
+    implementation project (":app:extensions")
+    implementation project (":app:di")
+    implementation project (":core")
+    /** ****************** Modules ****************** **/
 }

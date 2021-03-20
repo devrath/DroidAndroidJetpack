@@ -1,4 +1,4 @@
-package com.demo.code.utils.extensions
+package com.demo.extensions
 
 import android.app.Activity
 import android.app.Service

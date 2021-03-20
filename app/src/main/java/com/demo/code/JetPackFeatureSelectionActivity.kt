@@ -4,10 +4,9 @@ import android.os.Bundle
 import com.demo.code.base.BaseActivity
 import com.demo.code.databinding.ActivityJetpackSelectionBinding
 import com.demo.code.lifecycle.activities.ExoplayerActivity
-import com.demo.code.navigation.activities.NavigationDrawerActivity
 import com.demo.code.navigation.activities.SelectionScreenActivity
 import com.demo.code.paging3.activities.Paging3Activity
-import com.demo.code.utils.extensions.openActivity
+import com.demo.extensions.intent.openActivity
 
 class JetPackFeatureSelectionActivity : BaseActivity() {
 
