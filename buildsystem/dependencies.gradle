@@ -6,12 +6,18 @@ ext {
             constraintlayout_version    : '2.0.4',
             appcompat_version           : '1.2.0',
             corektx_version             : '1.3.2',
-            lifecycle_version           : '2.3.0'
+            lifecycle_version           : '2.3.0',
+            glide_version               : '4.12.0',
+            exo_player_version          : '2.13.2',
+            koin_version                : '2.0.1',
+            android_x_version           : '2.3.0',
+            coroutines_version          : '1.4.2',
+            retrofit_version            : '2.9.0',
+            android_x_legacy_version    : '1.0.0',
     ]
 
     /** Use Implementation **/
     libraries = [
-            /** Navigation libraries **/
             navigation : [
                     "androidx.navigation:navigation-ui-ktx:$nav_version",
                     "androidx.navigation:navigation-fragment-ktx:$nav_version"
@@ -31,7 +37,34 @@ ext {
             kotlinstdlib : [
                     "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
             ],
+            glideLib : [
+                    "com.github.bumptech.glide:glide:${versions.glide_version}",
+            ],
+            exoPlayerLib : [
+                    "com.google.android.exoplayer:exoplayer:${versions.exo_player_version}",
+            ],
+            koinLib : [
+                    "org.koin:koin-android:${versions.koin_version}",
+                    "org.koin:koin-androidx-viewmodel:${versions.koin_version}",
+                    "org.koin:koin-androidx-scope:${versions.koin_version}"
+            ],
+            androidXLifecycleLib : [
+                    "androidx.lifecycle:lifecycle-livedata-ktx:${versions.android_x_version}",
+                    "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.android_x_version}"
+            ],
+            coroutinesLib : [
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutines_version}",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutines_version}"
+            ],
+            retrofitLib : [
+                    "com.squareup.retrofit2:retrofit:${versions.retrofit_version}",
+                    "com.squareup.retrofit2:converter-gson:${versions.retrofit_version}"
+            ],
+            androidXlegacySupportLib : [
+                    "androidx.legacy:legacy-support-v4:${versions.android_x_legacy_version}",
+            ]
     ]
+
 
     /** Use androidTestImplementation **/
     androidTestLibraries = [

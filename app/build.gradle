@@ -6,15 +6,15 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.demo.code"
-        minSdkVersion 16
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        applicationId versions.applicationId
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode versions.versionCode
+        versionName  versions.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -53,34 +53,28 @@ android {
 }
 
 dependencies {
-
+    /** ************************** STANDARD LIBRARIES ************************** **/
     implementation libraries.kotlinstdlib
     implementation libraries.navigation
     implementation libraries.material
     implementation libraries.constraintlayout
     implementation libraries.appcompact
     implementation libraries.corektx
+    implementation libraries.glideLib
+    implementation libraries.exoPlayerLib
+    implementation libraries.koinLib
+    implementation libraries.androidXLifecycleLib
+    implementation libraries.coroutinesLib
+    implementation libraries.retrofitLib
+    implementation libraries.androidXlegacySupportLib
+    /** ************************** STANDARD LIBRARIES ************************** **/
 
-
+    /** ******************* UNIT TESTING STANDARD LIBRARIES ******************** **/
     testImplementation testLibraries.testjunit
+    /** ******************* UNIT TESTING STANDARD LIBRARIES ******************** **/
 
+    /** ****************** ANDROID TESTING STANDARD LIBRARIES ****************** **/
     androidTestImplementation androidTestLibraries.espresso
     androidTestImplementation androidTestLibraries.junit
-
-
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-
-    // Koin
-    implementation "org.koin:koin-android:2.0.1"
-    implementation 'org.koin:koin-androidx-viewmodel:2.0.1'
-    implementation 'org.koin:koin-androidx-scope:2.0.1'
-
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-    implementation 'com.google.android.exoplayer:exoplayer:2.13.2'
+    /** ****************** ANDROID TESTING STANDARD LIBRARIES ****************** **/
 }
