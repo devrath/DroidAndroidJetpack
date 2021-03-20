@@ -1,4 +1,4 @@
-package com.demo.code.utils.extensions
+package com.demo.extensions.intent
 
 import android.content.Context
 import android.content.Intent

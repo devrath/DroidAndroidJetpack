@@ -1,4 +1,4 @@
-package com.demo.code.utils
+package com.demo.core
 
 object Library {
     val books: List<Book> = listOf(

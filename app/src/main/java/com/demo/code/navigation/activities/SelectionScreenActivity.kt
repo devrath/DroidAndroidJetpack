@@ -5,7 +5,7 @@ import android.view.View
 import com.demo.code.R
 import com.demo.code.base.BaseActivity
 import com.demo.code.databinding.ActivitySelectionBinding
-import com.demo.code.utils.extensions.openActivity
+import com.demo.extensions.intent.openActivity
 
 class SelectionScreenActivity : BaseActivity() , View.OnClickListener {
 

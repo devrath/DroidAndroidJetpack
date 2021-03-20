@@ -1,2 +1,5 @@
+include ':app:extensions'
+include ':app:di'
+include ':core'
 include ':app'
 rootProject.name = "code"
