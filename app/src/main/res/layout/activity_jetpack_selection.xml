@@ -22,5 +22,10 @@
             android:text="@string/life_cycle_aware_component"
             style="@style/launchBtnStyle"/>
 
+        <Button
+            android:id="@+id/jetPackPaging3Id"
+            android:text="@string/paging3"
+            style="@style/launchBtnStyle"/>
+
     </LinearLayout>
 </ScrollView>

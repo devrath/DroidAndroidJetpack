@@ -8,11 +8,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/android_jetpack"
+        android:screenOrientation="portrait"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
             android:name=".JetPackFeatureSelectionActivity"
-            android:screenOrientation="portrait"
             android:theme="@style/Theme.Code">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,29 +23,30 @@
 
         <activity
             android:name=".navigation.activities.NavigationDrawerActivity"
-            android:screenOrientation="portrait"
             android:label="@string/navigation"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name=".navigation.activities.TwoFragmentContainerActivity"
-            android:screenOrientation="portrait"
             android:label="@string/navigation"
             android:theme="@style/Theme.Code" />
         <activity
             android:name=".navigation.activities.BottomNavigationActivity"
-            android:screenOrientation="portrait"
             android:label="@string/navigation"
             android:theme="@style/Theme.Code" />
         <activity
             android:name=".lifecycle.activities.ExoplayerActivity"
-            android:screenOrientation="portrait"
             android:label="@string/life_cycle_aware"
             android:theme="@style/Theme.Code" />
         <activity
             android:name=".navigation.activities.SelectionScreenActivity"
-            android:screenOrientation="portrait"
             android:label="@string/navigation"
             android:theme="@style/Theme.Code" />
+
+        <activity
+            android:name=".paging3.activities.Paging3Activity"
+            android:label="@string/paging3"
+            android:theme="@style/Theme.Code" />
+
     </application>
 
 </manifest>

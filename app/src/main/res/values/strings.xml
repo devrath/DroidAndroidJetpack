@@ -29,4 +29,5 @@
     <string name="life_cycle_aware_component">Life-cycle aware component</string>
     <string name="android_jetpack">Android Jetpack</string>
     <string name="life_cycle_aware">Life cycle aware component</string>
+    <string name="paging3">Paging3</string>
 </resources>

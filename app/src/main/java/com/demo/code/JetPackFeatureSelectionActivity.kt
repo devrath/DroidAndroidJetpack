@@ -6,6 +6,7 @@ import com.demo.code.databinding.ActivityJetpackSelectionBinding
 import com.demo.code.lifecycle.activities.ExoplayerActivity
 import com.demo.code.navigation.activities.NavigationDrawerActivity
 import com.demo.code.navigation.activities.SelectionScreenActivity
+import com.demo.code.paging3.activities.Paging3Activity
 import com.demo.code.utils.extensions.openActivity
 
 class JetPackFeatureSelectionActivity : BaseActivity() {
@@ -23,6 +24,9 @@ class JetPackFeatureSelectionActivity : BaseActivity() {
             }
             this.jetPackLifeCycleAwareId.setOnClickListener {
                 openActivity(ExoplayerActivity::class.java)
+            }
+            this.jetPackPaging3Id.setOnClickListener{
+                openActivity(Paging3Activity::class.java)
             }
         }
     }
