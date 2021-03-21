@@ -80,7 +80,6 @@ dependencies {
 
     /** ****************** Modules ****************** **/
     implementation project (":app:extensions")
-    implementation project (":app:di")
     implementation project (":core")
     /** ****************** Modules ****************** **/
 }
