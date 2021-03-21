@@ -67,6 +67,8 @@ dependencies {
     implementation libraries.coroutinesLib
     implementation libraries.retrofitLib
     implementation libraries.androidXlegacySupportLib
+    implementation libraries.paging3Lib
+
     /** ************************** STANDARD LIBRARIES ************************** **/
 
     /** ******************* UNIT TESTING STANDARD LIBRARIES ******************** **/

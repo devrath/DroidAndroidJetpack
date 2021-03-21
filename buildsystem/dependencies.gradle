@@ -14,6 +14,7 @@ ext {
             coroutines_version          : '1.4.2',
             retrofit_version            : '2.9.0',
             android_x_legacy_version    : '1.0.0',
+            android_paging_3_version    : '3.0.0-beta02',
     ]
 
     /** Use Implementation **/
@@ -62,7 +63,10 @@ ext {
             ],
             androidXlegacySupportLib : [
                     "androidx.legacy:legacy-support-v4:${versions.android_x_legacy_version}",
-            ]
+            ],
+            paging3Lib : [
+                    "androidx.paging:paging-runtime-ktx:${versions.android_paging_3_version}",
+            ],
     ]
 
 
