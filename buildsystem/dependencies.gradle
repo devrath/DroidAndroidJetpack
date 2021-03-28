@@ -15,7 +15,10 @@ ext {
             retrofit_version            : '2.9.0',
             android_x_legacy_version    : '1.0.0',
             android_paging_3_version    : '3.0.0-beta02',
+            ds_pref_version             : '1.0.0-alpha01',
     ]
+
+
 
     /** Use Implementation **/
     libraries = [
@@ -67,8 +70,10 @@ ext {
             paging3Lib : [
                     "androidx.paging:paging-runtime-ktx:${versions.android_paging_3_version}",
             ],
+            preferencesLib : [
+                    "androidx.datastore:datastore-preferences:${versions.ds_pref_version}",
+            ],
     ]
-
 
     /** Use androidTestImplementation **/
     androidTestLibraries = [

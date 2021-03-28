@@ -33,4 +33,6 @@
     <string name="data_store">Data store</string>
     <string name="preferences_data_store">Preferences Data Store</string>
     <string name="proto_data_store">Proto Data Store</string>
+    <string name="enter_some_text_to_save">Enter some text to save</string>
+    <string name="save_data">Save Data</string>
 </resources>
