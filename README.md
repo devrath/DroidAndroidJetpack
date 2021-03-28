@@ -122,6 +122,13 @@ The life-cycle aware components are made of 3 main parts
   <->**[Lifecycle-aware component](app/src/main/java/com/demo/code/lifecycle/util/ExoplayerActivityObserver.kt)**
   
 ---
+<h2>Data Store</h2>
+
+<p align="center">
+  <img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/datastore.jpeg">
+</p>
+
+
 
 
 
