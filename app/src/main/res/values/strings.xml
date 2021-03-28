@@ -35,4 +35,5 @@
     <string name="proto_data_store">Proto Data Store</string>
     <string name="enter_some_text_to_save">Enter some text to save</string>
     <string name="save_data">Save Data</string>
+    <string name="under_construction">Under Construction</string>
 </resources>
