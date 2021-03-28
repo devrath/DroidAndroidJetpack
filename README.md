@@ -10,7 +10,7 @@
 | --- |
 | [Navigation](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#jetpack-navigation "Navigation") |
 | [Life-cycle aware component](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#lifecycle-aware-components "Life-cycle aware component") |
-| Data Store |
+| [Data Store] (https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#data-store "Data Store") |
 
 
 ---
