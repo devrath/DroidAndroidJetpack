@@ -10,8 +10,7 @@
 | --- |
 | [Navigation](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#jetpack-navigation "Navigation") |
 | [Life-cycle aware component](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#lifecycle-aware-components "Life-cycle aware component") |
-| Preference Data Store |
-| Proto Data Store |
+| Data Store |
 
 
 ---
@@ -128,7 +127,20 @@ The life-cycle aware components are made of 3 main parts
   <img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/datastore.jpeg">
 </p>
 
+#### What is Data Store
+* Data store is a component of data storage solution from android jetpack.
+* It allows us to store the `key/value` pairs like shared preferences or typed objects with protocol buffers.
+* Data store uses kotlin, coroutines and flow to store data asynchronously with consistency and transaction support
+
+#### Why to use data store when we already have shared preferences
+* `Shared Preferences` are `synchronous` and not main thread safe, But data store is safe to use in main thread since it uses `Dispatchers.IO` under the hood.
+* `Shared Preferences` are not safe from runtime exceptions, But the `Data-Store` is safe from runtime exceptions
+* There is a easy way to migrate from `Shared Preferences`
 
 
+#### Type of Data Store 
 
+| Preference Data Store | Proto Data Store |
+| --- | --- |
+| <p align="center"><img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/prefdatastore.jpeg"></p> | <p align="center"><img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/protodatastore.jpeg"></p> |
 
