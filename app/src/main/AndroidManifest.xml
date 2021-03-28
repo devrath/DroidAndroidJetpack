@@ -41,12 +41,14 @@
             android:name=".navigation.activities.SelectionScreenActivity"
             android:label="@string/navigation"
             android:theme="@style/Theme.Code" />
-
         <activity
             android:name=".paging3.activities.Paging3Activity"
             android:label="@string/paging3"
             android:theme="@style/Theme.Code" />
-
+        <activity
+            android:name=".dataStore.activities.DataStoreActivity"
+            android:label="@string/paging3"
+            android:theme="@style/Theme.Code" />
     </application>
 
 </manifest>

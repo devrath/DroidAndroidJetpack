@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:fadeScrollbars="false"
     android:fitsSystemWindows="true"
+    android:layout_gravity="center"
     android:padding="@dimen/screen_padding">
 
     <LinearLayout
@@ -13,23 +14,13 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/jetpackNavigationId"
-            android:text="@string/navigation"
+            android:id="@+id/preferencesDsId"
+            android:text="@string/preferences_data_store"
             style="@style/launchBtnStyle"/>
 
         <Button
-            android:id="@+id/jetPackLifeCycleAwareId"
-            android:text="@string/life_cycle_aware_component"
-            style="@style/launchBtnStyle"/>
-
-        <Button
-            android:id="@+id/jetPackPaging3Id"
-            android:text="@string/paging3"
-            style="@style/launchBtnStyle"/>
-
-        <Button
-            android:id="@+id/jetDataStoreId"
-            android:text="@string/data_store"
+            android:id="@+id/protoDsId"
+            android:text="@string/proto_data_store"
             style="@style/launchBtnStyle"/>
 
     </LinearLayout>

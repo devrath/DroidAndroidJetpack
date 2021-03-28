@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/data_store_nav"
+    app:startDestination="@id/selectionDataStoreFragment">
+
+    <fragment
+        android:id="@+id/selectionDataStoreFragment"
+        android:name="com.demo.code.dataStore.fragments.SelectionDataStoreFragment"
+        android:label="fragment_selection_data_store"
+        tools:layout="@layout/fragment_selection_data_store" >
+        <action
+            android:id="@+id/action_selectionDataStoreFragment_to_protoDataStoreFragment"
+            app:destination="@id/protoDataStoreFragment" />
+        <action
+            android:id="@+id/action_selectionDataStoreFragment_to_preferenceDataStoreFragment"
+            app:destination="@id/preferenceDataStoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preferenceDataStoreFragment"
+        android:name="com.demo.code.dataStore.fragments.preferenceDataStore.PreferenceDataStoreFragment"
+        android:label="fragment_preference_data_store"
+        tools:layout="@layout/fragment_preference_data_store" />
+    <fragment
+        android:id="@+id/protoDataStoreFragment"
+        android:name="com.demo.code.dataStore.fragments.protoDataStore.ProtoDataStoreFragment"
+        android:label="fragment_proto_data_store"
+        tools:layout="@layout/fragment_proto_data_store" />
+
+</navigation>

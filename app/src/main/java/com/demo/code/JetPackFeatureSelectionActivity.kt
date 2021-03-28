@@ -2,6 +2,7 @@ package com.demo.code
 
 import android.os.Bundle
 import com.demo.code.base.BaseActivity
+import com.demo.code.dataStore.activities.DataStoreActivity
 import com.demo.code.databinding.ActivityJetpackSelectionBinding
 import com.demo.code.lifecycle.activities.ExoplayerActivity
 import com.demo.code.navigation.activities.SelectionScreenActivity
@@ -26,6 +27,9 @@ class JetPackFeatureSelectionActivity : BaseActivity() {
             }
             this.jetPackPaging3Id.setOnClickListener{
                 openActivity(Paging3Activity::class.java)
+            }
+            this.jetDataStoreId.setOnClickListener{
+                openActivity(DataStoreActivity::class.java)
             }
         }
     }
