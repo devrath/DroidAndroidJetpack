@@ -11,7 +11,7 @@
 | [Navigation](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#jetpack-navigation "Navigation") |
 | [Life-cycle aware component](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#lifecycle-aware-components "Life-cycle aware component") |
 | [Data Store](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#data-store "Data Store") |
-
+| [Live Data](https://github.com/devrath/DroidAndroidJetpack/blob/master/README.md#live-data "Live Data") |
 
 ---
 
@@ -153,6 +153,6 @@ The life-cycle aware components are made of 3 main parts
 
 | Type | About |
 | --- | --- |
-| Live Data | some discription |
+| Live Data | some description |
 | Mutable Live Data | some description |
 | Mediator Live Data | some description |
