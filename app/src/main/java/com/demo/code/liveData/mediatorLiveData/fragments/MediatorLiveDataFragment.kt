@@ -31,7 +31,23 @@ class MediatorLiveDataFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MediatorLiveDataViewModel::class.java)
+        observeLiveData()
+        setClickListener()
+    }
 
+    private fun setClickListener() {
+        binding.serverCounterId.setOnClickListener {
+            viewModel.fetchDataFromServer()
+        }
+        binding.localCounterId.setOnClickListener {
+            viewModel.fetchDataFromLocalDb()
+        }
+    }
+
+    private fun observeLiveData() {
+        viewModel.observeData().observe(viewLifecycleOwner,{
+            binding.counterValueId.text = it.toString()
+        })
     }
 
 }

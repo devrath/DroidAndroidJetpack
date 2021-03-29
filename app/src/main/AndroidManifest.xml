@@ -47,11 +47,11 @@
             android:theme="@style/Theme.Code" />
         <activity
             android:name=".dataStore.activities.DataStoreActivity"
-            android:label="@string/paging3"
+            android:label="@string/data_store"
             android:theme="@style/Theme.Code" />
         <activity
             android:name=".liveData.activity.LiveDataActivity"
-            android:label="@string/paging3"
+            android:label="@string/live_data"
             android:theme="@style/Theme.Code" />
     </application>
 
