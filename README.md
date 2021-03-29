@@ -136,3 +136,23 @@ The life-cycle aware components are made of 3 main parts
 * We are displaying the data from the `dataManager` helper class that gets the data from the data store via a flow and displays the data in the text view
 * **[View](app/src/main/java/com/demo/code/dataStore/fragments/preferenceDataStore/PreferenceDataStoreFragment.kt)**
   <->**[ManagerClass](app/src/main/java/com/demo/code/dataStore/util/DataManager.kt)**
+  
+---
+<h2>Live Data</h2>
+
+<p align="center">
+  <img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/liveData.jpeg">
+</p>
+
+#### What is Live data
+* `Live Data` is a holder of data that can be observed, Speciality of this is the unlike the regular `observable`, It is `life-cycle aware`
+* `Live Data` forms a good communication between the data and the UI, By which change in the data, we can update the UI
+* Since the `Live Data` is `life cycle aware`, we can avoid memory leaks and crashes caused due to when the activities are stopped
+
+#### Type of Live Data
+
+| Type | About |
+| --- | --- |
+| Live Data | some discription |
+| Mutable Live Data | some description |
+| Mediator Live Data | some description |
