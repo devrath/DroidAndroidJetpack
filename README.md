@@ -32,19 +32,6 @@ alt="Developers" /></a>
 </p>
 
 ---
-
-#### Gradle setup
-
-``` android
-dependencies {
-    def lifecycle_version = "<Add the latest version here>"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    ...
-}
-```
-
----
 <h2>Jetpack Navigation</h2>
 
 <p align="center">
@@ -144,3 +131,8 @@ The life-cycle aware components are made of 3 main parts
 | --- | --- |
 | <p align="center"><img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/prefdatastore.jpeg"></p> | <p align="center"><img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/protodatastore.jpeg"></p> |
 
+#### Demo represents how the data-store is used
+* Here we have a fragment where we are storing a value entered in edit-text, on click of save button, We have used global scope here
+* We are displaying the data from the `dataManager` helper class that gets the data from the data store via a flow and displays the data in the text view
+* **[View](app/src/main/java/com/demo/code/dataStore/fragments/preferenceDataStore/PreferenceDataStoreFragment.kt)**
+  <->**[ManagerClass](app/src/main/java/com/demo/code/dataStore/util/DataManager.kt)**
