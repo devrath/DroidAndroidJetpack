@@ -36,4 +36,7 @@
     <string name="enter_some_text_to_save">Enter some text to save</string>
     <string name="save_data">Save Data</string>
     <string name="under_construction">Under Construction</string>
+    <string name="liveData">LiveData</string>
+    <string name="mutable_live_data">Mutable Live Data</string>
+    <string name="mediator_live_data">Mediator Live Data</string>
 </resources>

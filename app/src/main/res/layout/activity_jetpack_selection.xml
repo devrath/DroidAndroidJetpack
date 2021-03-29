@@ -23,13 +23,18 @@
             style="@style/launchBtnStyle"/>
 
         <Button
-            android:id="@+id/jetPackPaging3Id"
-            android:text="@string/paging3"
+            android:id="@+id/jetDataStoreId"
+            android:text="@string/data_store"
             style="@style/launchBtnStyle"/>
 
         <Button
-            android:id="@+id/jetDataStoreId"
-            android:text="@string/data_store"
+            android:id="@+id/jetLiveDataId"
+            android:text="@string/liveData"
+            style="@style/launchBtnStyle"/>
+
+        <Button
+            android:id="@+id/jetPackPaging3Id"
+            android:text="@string/paging3"
             style="@style/launchBtnStyle"/>
 
     </LinearLayout>

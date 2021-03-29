@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center"
+    android:padding="@dimen/screen_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/mutableLiveDataId"
+            android:text="@string/mutable_live_data"
+            style="@style/launchBtnStyle"/>
+
+        <Button
+            android:id="@+id/mediatorLiveDataId"
+            android:text="@string/mediator_live_data"
+            style="@style/launchBtnStyle"/>
+
+    </LinearLayout>
+</ScrollView>

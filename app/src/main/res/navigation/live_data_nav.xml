@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/live_data_nav"
+    app:startDestination="@id/selectionLiveDataFragment">
+
+    <fragment
+        android:id="@+id/selectionLiveDataFragment"
+        android:name="com.demo.code.liveData.selection.fragments.SelectionLiveDataFragment"
+        tools:layout="@layout/selection_live_data_fragment"
+        android:label="SelectionLiveDataFragment" >
+        <action
+            android:id="@+id/action_selectionLiveDataFragment_to_mutableLiveDataFragment"
+            app:destination="@id/mutableLiveDataFragment" />
+        <action
+            android:id="@+id/action_selectionLiveDataFragment_to_mediatorLiveDataFragment"
+            app:destination="@id/mediatorLiveDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mediatorLiveDataFragment"
+        android:name="com.demo.code.liveData.mutableLiveData.fragments.MediatorLiveDataFragment"
+        android:label="mediator_live_data_fragment"
+        tools:layout="@layout/mediator_live_data_fragment" />
+    <fragment
+        android:id="@+id/mutableLiveDataFragment"
+        android:name="com.demo.code.liveData.mediatorLiveData.fragments.MutableLiveDataFragment"
+        android:label="mutable_live_data_fragment"
+        tools:layout="@layout/mutable_live_data_fragment" />
+</navigation>
