@@ -1,4 +1,4 @@
-package com.demo.code.liveData.mutableLiveData.vm
+package com.demo.code.liveData.mediatorLiveData.vm
 
 import androidx.lifecycle.ViewModel
 

@@ -19,12 +19,12 @@
     </fragment>
     <fragment
         android:id="@+id/mediatorLiveDataFragment"
-        android:name="com.demo.code.liveData.mutableLiveData.fragments.MediatorLiveDataFragment"
+        android:name="com.demo.code.liveData.mediatorLiveData.fragments.MediatorLiveDataFragment"
         android:label="mediator_live_data_fragment"
         tools:layout="@layout/mediator_live_data_fragment" />
     <fragment
         android:id="@+id/mutableLiveDataFragment"
-        android:name="com.demo.code.liveData.mediatorLiveData.fragments.MutableLiveDataFragment"
+        android:name="com.demo.code.liveData.mutableLiveData.fragments.MutableLiveDataFragment"
         android:label="mutable_live_data_fragment"
         tools:layout="@layout/mutable_live_data_fragment" />
 </navigation>

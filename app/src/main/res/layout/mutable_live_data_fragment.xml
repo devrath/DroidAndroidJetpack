@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".liveData.mediatorLiveData.fragments.MutableLiveDataFragment">
+    tools:context=".liveData.mutableLiveData.fragments.MutableLiveDataFragment">
 
     <TextView
         android:layout_width="match_parent"
