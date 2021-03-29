@@ -32,19 +32,6 @@ alt="Developers" /></a>
 </p>
 
 ---
-
-#### Gradle setup
-
-``` android
-dependencies {
-    def lifecycle_version = "<Add the latest version here>"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    ...
-}
-```
-
----
 <h2>Jetpack Navigation</h2>
 
 <p align="center">
