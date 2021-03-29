@@ -144,3 +144,10 @@ The life-cycle aware components are made of 3 main parts
 | --- | --- |
 | <p align="center"><img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/prefdatastore.jpeg"></p> | <p align="center"><img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/protodatastore.jpeg"></p> |
 
+#### Demo represents how the data-store is used
+* Here we have a activity that is playing a video using the exo-player, This exoplayer is life-cycle aware 
+* Activity is binded to a life-cycle aware component
+* We can observe all the logic of Exoplayer is moved into the life-cycle aware component even though the life cycle is lifecycle aware 
+* This helps to organize our logic seperately 
+* **[View](app/src/main/java/com/demo/code/dataStore/fragments/preferenceDataStore/PreferenceDataStoreFragment.kt)**
+  <->**[ManagerClass](app/src/main/java/com/demo/code/dataStore/util/DataManager.kt)**
