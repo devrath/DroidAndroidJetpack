@@ -151,8 +151,8 @@ The life-cycle aware components are made of 3 main parts
 
 #### Type of Live Data
 
-| Type | About |
-| --- | --- |
-| Live Data | It can only be observed but cannot be set. It is a subclass of `Object` |
-| Mutable Live Data | The value can be set here. It is a subclass of `LiveData` |
-| Mediator Live Data | It is a subclass of `MutableLiveData` |
+| Type | About | Demo classes |
+| --- | --- | --- |
+| Live Data | It can only be observed but cannot be set. It is a subclass of `Object` | [View](app/src/main/java/com/demo/code/liveData/mutableLiveData/fragments/MutableLiveDataFragment.kt) , [ViewModel](app/src/main/java/com/demo/code/liveData/mutableLiveData/vm/MutableLiveDataViewModel.kt)
+| Mutable Live Data | The value can be set here. It is a subclass of `LiveData` | code |
+| Mediator Live Data | It is a subclass of `MutableLiveData` | code |
