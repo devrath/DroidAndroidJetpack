@@ -11,10 +11,6 @@ import com.demo.code.liveData.mutableLiveData.vm.MutableLiveDataViewModel
 
 class MutableLiveDataFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = MutableLiveDataFragment()
-    }
-
     private var _binding: MutableLiveDataFragmentBinding? = null
     private val binding get() = _binding!!
 
@@ -31,7 +27,20 @@ class MutableLiveDataFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MutableLiveDataViewModel::class.java)
+        observeLiveData()
+        setClickListener()
+    }
 
+    private fun setClickListener() {
+        binding.buttonId.setOnClickListener {
+            viewModel.fetchDataFromServer()
+        }
+    }
+
+    private fun observeLiveData() {
+        viewModel.dataFromRepository().observe(viewLifecycleOwner,{
+                binding.counterValueId.text = it.toString()
+        })
     }
 
 }

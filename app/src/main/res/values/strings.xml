@@ -39,4 +39,5 @@
     <string name="liveData">LiveData</string>
     <string name="mutable_live_data">Mutable Live Data</string>
     <string name="mediator_live_data">Mediator Live Data</string>
+    <string name="increment_counter">Increment Counter</string>
 </resources>
