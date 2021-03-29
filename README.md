@@ -141,7 +141,7 @@ The life-cycle aware components are made of 3 main parts
 <h2>Live Data</h2>
 
 <p align="center">
-  <img width="400" height="200" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/liveData.jpeg">
+  <img width="400" height="230" src="https://github.com/devrath/DroidAndroidJetpack/blob/master/images/liveData.jpeg">
 </p>
 
 #### What is Live data
