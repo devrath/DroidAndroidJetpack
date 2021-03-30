@@ -3,8 +3,6 @@ package com.demo.code.paging.models
 import com.squareup.moshi.Json
 
 data class ApiResponse(
-    @Json(name = "ad")
-    val ad: Ad,
     @Json(name = "data")
     val myData: List<Data>,
     @Json(name = "page")

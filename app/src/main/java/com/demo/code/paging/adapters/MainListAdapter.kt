@@ -7,26 +7,24 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.demo.code.R
+import com.demo.code.databinding.ListItemBinding
 import com.demo.code.paging.models.Data
 
-class MainListAdapter : PagingDataAdapter<Data, MainListAdapter.ViewHolder>(DataDifferntiator) {
+class MainListAdapter : PagingDataAdapter<Data, MainListAdapter.HoursViewHolder>(DataDifferntiator) {
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view)
+    override fun onBindViewHolder(holder: HoursViewHolder, position: Int) {
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        //textViewName.text =
-            //"${getItem(position)?.firstName} ${getItem(position)?.lastName}"
-        //holder.itemView.textViewEmail.text = getItem(position)?.email
+        holder.binding.textViewName.text =
+        "${getItem(position)?.firstName} ${getItem(position)?.lastName}"
 
+        holder.binding.textViewEmail.text = getItem(position)?.email
     }
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(
-            LayoutInflater
-                .from(parent.context)
-                .inflate(R.layout.list_item, parent, false)
-        )
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HoursViewHolder {
+        val binding = ListItemBinding
+                .inflate(LayoutInflater.from(parent.context), parent, false)
+        return HoursViewHolder(binding)
     }
 
     object DataDifferntiator : DiffUtil.ItemCallback<Data>() {
@@ -39,5 +37,7 @@ class MainListAdapter : PagingDataAdapter<Data, MainListAdapter.ViewHolder>(Data
             return oldItem == newItem
         }
     }
+
+    inner class HoursViewHolder(val binding: ListItemBinding) :RecyclerView.ViewHolder(binding.root)
 
 }
