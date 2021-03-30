@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/paging_nav"
+    app:startDestination="@id/selectionPagingFragment">
+
+    <fragment
+        android:id="@+id/selectionPagingFragment"
+        android:name="com.demo.code.paging.selection.fragments.SelectionPagingFragment"
+        tools:layout="@layout/selection_paging_fragment"
+        android:label="SelectionPagingFragment" >
+        <action
+            android:id="@+id/action_selectionPagingFragment_to_horizontalPagingFragment"
+            app:destination="@id/horizontalPagingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/horizontalPagingFragment"
+        android:name="com.demo.code.paging.horizontalPaging.fragments.HorizontalPagingFragment"
+        android:label="horizontal_paging_fragment"
+        tools:layout="@layout/horizontal_paging_fragment" />
+</navigation>

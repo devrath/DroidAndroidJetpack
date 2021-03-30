@@ -1,4 +1,4 @@
-package com.demo.code.paging3.activities
+package com.demo.code.paging.activities
 
 import android.os.Bundle
 import com.demo.code.base.BaseActivity
