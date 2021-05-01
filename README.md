@@ -1,10 +1,11 @@
 ![Banner](images/Logo-new.png)
 
-
-![Jetpack-Navigation](https://img.shields.io/badge/Jetpack-Navigation-orange)
-![Jetpack-Navigation](https://img.shields.io/badge/Jetpack-Life--cycle--aware-brightgreen)
-![Data-Store](https://img.shields.io/badge/Jetpack-Data--Store-lightgrey)
-![Live-Data](https://img.shields.io/badge/Jetpack-Live--Data-blue)
+<p align="center">
+<a><img src="https://img.shields.io/badge/Jetpack-Navigation-orange"></a>
+<a><img src="https://img.shields.io/badge/Jetpack-Life--cycle--aware-brightgreen"></a>  
+<a><img src="https://img.shields.io/badge/Jetpack-Data--Store-lightgrey"></a>  
+<a><img src="https://img.shields.io/badge/Jetpack-Live--Data-blue"></a>  
+</p>
 
 
 
