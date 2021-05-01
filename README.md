@@ -1,11 +1,5 @@
 ![Banner](images/Logo-new.png)
 
-# Android Jetpack
-
-![Jetpack Navigation Components](images/android-jetpack.png)
----
-
-
 | Quick Reference |
 | --- |
 | [Navigation](https://github.com/devrath/DroidAndroidJetpack/wiki/Jetpack-Navigation) |
