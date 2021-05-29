@@ -16,6 +16,8 @@ ext {
             android_x_legacy_version    : '1.0.0',
             android_paging_3_version    : '3.0.0-beta02',
             ds_pref_version             : '1.0.0-alpha01',
+            camerax_version             : '1.0.0',
+            camerax_extension           : '1.0.0-alpha24',
     ]
 
 
@@ -72,6 +74,11 @@ ext {
             ],
             preferencesLib : [
                     "androidx.datastore:datastore-preferences:${versions.ds_pref_version}",
+            ],
+            cameraxLib : [
+                    "androidx.camera:camera-core:${versions.camerax_version}",
+                    "androidx.camera:camera-camera2:${versions.camerax_version}",
+                    "androidx.camera:camera-extensions:${versions.camerax_extension}",
             ],
     ]
 

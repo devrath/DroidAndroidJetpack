@@ -69,6 +69,7 @@ dependencies {
     implementation libraries.androidXlegacySupportLib
     implementation libraries.paging3Lib
     implementation libraries.preferencesLib
+    implementation libraries.cameraxLib
 
     implementation 'androidx.core:core-ktx:1.5.0'
     implementation "com.squareup.moshi:moshi-kotlin:1.10.0"
