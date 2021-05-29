@@ -70,12 +70,12 @@ dependencies {
     implementation libraries.paging3Lib
     implementation libraries.preferencesLib
 
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation "com.squareup.moshi:moshi-kotlin:1.9.3"
-    def paging_version = "3.0.0-alpha04"
+    implementation 'androidx.core:core-ktx:1.5.0'
+    implementation "com.squareup.moshi:moshi-kotlin:1.10.0"
+    def paging_version = "3.0.0"
     implementation "androidx.paging:paging-runtime:$paging_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
-    implementation "com.squareup.retrofit2:converter-moshi:2.6.2"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
 
     /** ************************** STANDARD LIBRARIES ************************** **/
 
@@ -90,6 +90,5 @@ dependencies {
 
     /** ****************** Modules ****************** **/
     implementation project (":app:extensions")
-    implementation project (":core")
     /** ****************** Modules ****************** **/
 }
