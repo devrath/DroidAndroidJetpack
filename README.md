@@ -17,6 +17,7 @@
 | [Life-cycle aware component](https://github.com/devrath/DroidAndroidJetpack/wiki/Lifecycle-Aware-Components) |
 | [Data Store](https://github.com/devrath/DroidAndroidJetpack/wiki/Data-Store) |
 | [Live Data](https://github.com/devrath/DroidAndroidJetpack/wiki/Live-Data) |
+| [CameraX](https://github.com/devrath/DroidAndroidJetpack/wiki/CameraX) |
 
  
 <p align="center">
