@@ -8,11 +8,12 @@ class CameraxActivity: BaseActivity() {
 
     private lateinit var binding: ActivityCameraXBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCameraXBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
     }
+
 
 }
