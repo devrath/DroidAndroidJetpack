@@ -41,4 +41,5 @@
     <string name="increment_counter">Increment Counter</string>
     <string name="live_data">LiveData</string>
     <string name="paging3">Paging3</string>
+    <string name="camera_x">Camera X</string>
 </resources>

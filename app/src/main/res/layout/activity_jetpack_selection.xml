@@ -35,6 +35,12 @@
         <Button
             android:id="@+id/jetPackPaging3Id"
             android:text="@string/paging3"
+            android:visibility="gone"
+            style="@style/launchBtnStyle"/>
+
+        <Button
+            android:id="@+id/jetPackCameraXId"
+            android:text="@string/camera_x"
             style="@style/launchBtnStyle"/>
 
     </LinearLayout>

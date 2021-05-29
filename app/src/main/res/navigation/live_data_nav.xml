@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/selectionLiveDataFragment"
-        android:name="com.demo.code.paging.selection.fragments.SelectionPagingFragment"
+        android:name="com.demo.code.liveData.selection.fragments.SelectionLiveDataFragment"
         tools:layout="@layout/selection_live_data_fragment"
         android:label="SelectionLiveDataFragment" >
         <action

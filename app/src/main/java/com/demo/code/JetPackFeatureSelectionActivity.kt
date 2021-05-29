@@ -2,6 +2,7 @@ package com.demo.code
 
 import android.os.Bundle
 import com.demo.code.base.BaseActivity
+import com.demo.code.camerax.activities.CameraxActivity
 import com.demo.code.dataStore.activities.DataStoreActivity
 import com.demo.code.databinding.ActivityJetpackSelectionBinding
 import com.demo.code.lifecycle.activities.ExoplayerActivity
@@ -34,6 +35,9 @@ class JetPackFeatureSelectionActivity : BaseActivity() {
             }
             this.jetLiveDataId.setOnClickListener{
                 openActivity(LiveDataActivity::class.java)
+            }
+            this.jetPackCameraXId.setOnClickListener{
+                openActivity(CameraxActivity::class.java)
             }
         }
     }

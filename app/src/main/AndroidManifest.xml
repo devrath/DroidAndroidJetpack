@@ -53,6 +53,10 @@
             android:name=".liveData.activity.LiveDataActivity"
             android:label="@string/live_data"
             android:theme="@style/Theme.Code" />
+        <activity
+            android:name=".camerax.activities.CameraxActivity"
+            android:label="@string/live_data"
+            android:theme="@style/Theme.Code" />
     </application>
 
 </manifest>
