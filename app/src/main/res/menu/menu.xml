@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/goto_top"
+        android:icon="@drawable/ic_vertical_align_top_white_24px"
+        android:title="@string/goto_top"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/goto_bottom"
+        android:icon="@drawable/ic_vertical_align_bottom_white_24px"
+        android:title="@string/goto_bottom"
+        app:showAsAction="ifRoom" />
+
+</menu>

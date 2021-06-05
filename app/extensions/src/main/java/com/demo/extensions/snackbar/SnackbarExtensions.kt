@@ -1,4 +1,4 @@
-package com.demo.extensions
+package com.demo.extensions.snackbar
 
 import android.view.View
 import androidx.annotation.StringRes

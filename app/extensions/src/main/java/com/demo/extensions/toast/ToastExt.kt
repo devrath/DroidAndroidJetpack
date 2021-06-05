@@ -1,4 +1,4 @@
-package com.demo.extensions
+package com.demo.extensions.toast
 
 import android.annotation.SuppressLint
 import android.content.Context

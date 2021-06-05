@@ -8,7 +8,7 @@ import com.demo.code.databinding.ActivityJetpackSelectionBinding
 import com.demo.code.lifecycle.activities.ExoplayerActivity
 import com.demo.code.liveData.activity.LiveDataActivity
 import com.demo.code.navigation.activities.SelectionScreenActivity
-import com.demo.code.paging.activities.Paging3Activity
+import com.demo.code.paging.Paging3Activity
 import com.demo.extensions.intent.openActivity
 
 class JetPackFeatureSelectionActivity : BaseActivity() {

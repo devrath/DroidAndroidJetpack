@@ -42,7 +42,7 @@
             android:label="@string/navigation"
             android:theme="@style/Theme.Code" />
         <activity
-            android:name=".paging.activities.Paging3Activity"
+            android:name=".paging.Paging3Activity"
             android:label="@string/paging3"
             android:theme="@style/Theme.Code" />
         <activity
@@ -56,6 +56,14 @@
         <activity
             android:name=".camerax.activities.CameraxActivity"
             android:label="@string/camera_x"
+            android:theme="@style/Theme.Code" />
+        <activity
+            android:name=".paging.fromLocalDatabase.PagingFromLocalDbActivity"
+            android:label="@string/paging_from_local_database"
+            android:theme="@style/Theme.Code" />
+        <activity
+            android:name=".paging.fromRemoteApi.PagingFromRemoteApiActivity"
+            android:label="@string/paging_from_remote_api"
             android:theme="@style/Theme.Code" />
     </application>
 

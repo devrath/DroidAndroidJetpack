@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="48dp">
+
+  <TextView
+    android:id="@+id/title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:paddingEnd="8dp"
+    android:paddingStart="8dp"
+    android:scrollHorizontally="true"
+    android:textStyle="bold"
+    app:layout_constraintBaseline_toBaselineOf="@+id/rating"
+    app:layout_constraintEnd_toStartOf="@+id/rating"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:text="Star Wars" />
+
+  <TextView
+    android:id="@+id/releaseDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="8dp"
+    android:paddingStart="8dp"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/title"
+    app:layout_constraintTop_toBottomOf="@+id/title"
+    tools:text="1999-01-01" />
+
+  <TextView
+    android:id="@+id/rating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="9.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

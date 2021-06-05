@@ -1,4 +1,4 @@
-package com.demo.extensions
+package com.demo.extensions.fragment
 
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction

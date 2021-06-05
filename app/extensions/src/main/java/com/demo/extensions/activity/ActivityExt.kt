@@ -1,4 +1,4 @@
-package com.demo.extensions
+package com.demo.extensions.activity
 
 import android.app.Activity
 import android.util.DisplayMetrics

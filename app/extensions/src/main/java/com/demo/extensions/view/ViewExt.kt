@@ -1,4 +1,4 @@
-package com.demo.extensions
+package com.demo.extensions.view
 
 import android.graphics.Bitmap
 import android.graphics.Canvas

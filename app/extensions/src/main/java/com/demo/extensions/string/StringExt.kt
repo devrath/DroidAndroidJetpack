@@ -1,4 +1,4 @@
-package com.demo.extensions
+package com.demo.extensions.string
 
 import java.security.MessageDigest
 

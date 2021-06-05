@@ -52,6 +52,7 @@ android {
     }
 }
 
+
 dependencies {
     /** ************************** STANDARD LIBRARIES ************************** **/
     implementation libraries.kotlinstdlib
@@ -67,16 +68,24 @@ dependencies {
     implementation libraries.coroutinesLib
     implementation libraries.retrofitLib
     implementation libraries.androidXlegacySupportLib
-    implementation libraries.paging3Lib
     implementation libraries.preferencesLib
     implementation libraries.cameraxLib
 
     implementation 'androidx.core:core-ktx:1.5.0'
     implementation "com.squareup.moshi:moshi-kotlin:1.10.0"
-    def paging_version = "3.0.0"
-    implementation "androidx.paging:paging-runtime:$paging_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
     implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+
+    // Room
+    def room_version = "2.3.0"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
+    // Paging
+    implementation "android.arch.paging:runtime:1.0.0-rc1"
 
     /** ************************** STANDARD LIBRARIES ************************** **/
 

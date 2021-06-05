@@ -42,4 +42,8 @@
     <string name="live_data">LiveData</string>
     <string name="paging3">Paging3</string>
     <string name="camera_x">Camera X</string>
+    <string name="paging_from_remote_api">Paging from remote API</string>
+    <string name="paging_from_local_database">Paging from local database</string>
+    <string name="goto_bottom">Goto Bottom</string>
+    <string name="goto_top">Goto Top</string>
 </resources>

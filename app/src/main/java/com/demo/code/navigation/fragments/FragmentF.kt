@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.demo.code.databinding.FragmentLayoutFBinding
-import com.demo.extensions.toast
+import com.demo.extensions.toast.toast
 
 class FragmentF : Fragment() {
 
