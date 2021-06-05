@@ -65,6 +65,14 @@
             android:name=".paging.fromRemoteApi.PagingFromRemoteApiActivity"
             android:label="@string/paging_from_remote_api"
             android:theme="@style/Theme.Code" />
+        <activity
+            android:name=".workmanager.WorkManagerActivity"
+            android:label="@string/work_manager"
+            android:theme="@style/Theme.Code" />
+        <activity
+            android:name=".workmanager.exampleone.WorkManagerExampleOneActivity"
+            android:label="@string/work_mng_ex_one"
+            android:theme="@style/Theme.Code" />
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@ import com.demo.code.lifecycle.activities.ExoplayerActivity
 import com.demo.code.liveData.activity.LiveDataActivity
 import com.demo.code.navigation.activities.SelectionScreenActivity
 import com.demo.code.paging.Paging3Activity
+import com.demo.code.workmanager.WorkManagerActivity
 import com.demo.extensions.intent.openActivity
 
 class JetPackFeatureSelectionActivity : BaseActivity() {
@@ -38,6 +39,9 @@ class JetPackFeatureSelectionActivity : BaseActivity() {
             }
             this.jetPackCameraXId.setOnClickListener{
                 openActivity(CameraxActivity::class.java)
+            }
+            this.workManagerId.setOnClickListener{
+                openActivity(WorkManagerActivity::class.java)
             }
         }
     }

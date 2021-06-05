@@ -42,5 +42,10 @@
             android:text="@string/camera_x"
             style="@style/launchBtnStyle"/>
 
+        <Button
+            android:id="@+id/workManagerId"
+            android:text="@string/work_manager"
+            style="@style/launchBtnStyle"/>
+
     </LinearLayout>
 </ScrollView>
