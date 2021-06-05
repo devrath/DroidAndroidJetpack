@@ -8,7 +8,7 @@
 <a><img src="https://img.shields.io/badge/Jetpack%20Tool-Data%20Store-gold?style=for-the-badge&logo=tools"></a>  
 <a><img src="https://img.shields.io/badge/Jetpack%20Tool-Live%20Data-brown?style=for-the-badge&logo=tools"></a>  
 <a><img src="https://img.shields.io/badge/Jetpack%20Tool-CameraX-pink?style=for-the-badge&logo=camera"></a>  
-<a><img src="https://img.shields.io/badge/Jetpack%20Tool-CameraX-deeppink?style=for-the-badge&logo=camera"></a>  
+<a><img src="https://img.shields.io/badge/Jetpack%20Tool-Work%20Manager-deeppink?style=for-the-badge&logo=camera"></a>  
 </p>
 
 
