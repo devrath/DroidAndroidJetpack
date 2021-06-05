@@ -9,9 +9,7 @@ import android.view.View
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.PermissionChecker.PERMISSION_GRANTED
-import androidx.work.Data
-import androidx.work.OneTimeWorkRequest
-import androidx.work.WorkManager
+import androidx.work.*
 import com.demo.code.base.BaseActivity
 import com.demo.code.databinding.ActivityWorkManagerExampleOneBinding
 import com.demo.code.workmanager.exampleone.workers.*
@@ -20,11 +18,15 @@ class WorkManagerExampleOneActivity : BaseActivity() {
 
     private lateinit var binding: ActivityWorkManagerExampleOneBinding
 
+
     companion object {
         private const val GALLERY_REQUEST_CODE = 300
         private const val PERMISSIONS_REQUEST_CODE = 301
 
         private const val MAX_NUMBER_REQUEST_PERMISSIONS = 2
+
+        private const val UNIQUE_WORK_NAME = "UNIQUE_WORK_NAME"
+        private const val WORK_TAG = "WORK_TAG"
 
         private const val IMAGE_TYPE = "image/*"
         private const val IMAGE_CHOOSER_TITLE = "Select Picture"
@@ -41,15 +43,16 @@ class WorkManagerExampleOneActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityWorkManagerExampleOneBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         initUi()
-
         requestPermissionsIfNecessary()
     }
-
     private fun initUi() {
         binding.uploadGroup.visibility = View.GONE
+
         binding.pickPhotosButton.setOnClickListener { showPhotoPicker() }
+        binding.cancelButton.setOnClickListener {
+            WorkManager.getInstance().cancelUniqueWork(UNIQUE_WORK_NAME)
+        }
     }
 
     private fun showPhotoPicker() {
@@ -105,13 +108,15 @@ class WorkManagerExampleOneActivity : BaseActivity() {
             val zipFiles = OneTimeWorkRequest.Builder(CompressWorker::class.java).build()
 
             val uploadZip = OneTimeWorkRequest.Builder(UploadWorker::class.java)
+                .setConstraints(Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build())
+                .addTag(WORK_TAG)
                 .build()
 
             val cleanFiles = OneTimeWorkRequest.Builder(CleanFilesWorker::class.java).build()
 
             val workManager = WorkManager.getInstance()
 
-            workManager.beginWith(cleanFiles)
+            workManager.beginUniqueWork(UNIQUE_WORK_NAME, ExistingWorkPolicy.REPLACE, cleanFiles)
                 .then(applySepiaFilter)
                 .then(zipFiles)
                 .then(uploadZip)
