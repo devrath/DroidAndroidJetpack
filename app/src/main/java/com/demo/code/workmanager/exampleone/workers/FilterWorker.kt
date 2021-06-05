@@ -30,13 +30,13 @@ class FilterWorker(context: Context, workerParams: WorkerParameters) : Worker(co
     val filteredBitmap = ImageUtils.applySepiaFilter(bitmap)
     val filteredImageUri = ImageUtils.writeBitmapToFile(applicationContext, filteredBitmap)
 
-    var outputData =
+    val outputData =
         Data.Builder()
             .putString(IMAGE_PATH_PREFIX + imageIndex, filteredImageUri.toString())
             .build()
 
     Log.d(LOG_TAG, "Success!")
-    Result.success()
+    Result.success(outputData)
   } catch (e: Throwable) {
     Log.e(LOG_TAG, "Error executing work: " + e.message, e)
     Result.failure()

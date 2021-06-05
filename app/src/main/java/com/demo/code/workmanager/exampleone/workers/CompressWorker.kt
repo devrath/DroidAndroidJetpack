@@ -25,12 +25,12 @@ class CompressWorker(context: Context, workerParams: WorkerParameters) :
 
         val zipFile = ImageUtils.createZipFile(applicationContext, imagePaths.toTypedArray())
 
-        var outputData = Data.Builder()
+        val outputData = Data.Builder()
             .putString(KEY_ZIP_PATH, zipFile.path)
             .build()
 
         Log.d(LOG_TAG, "Success!")
-        Result.success()
+        Result.success(outputData)
     } catch (e: Throwable) {
         Log.e(LOG_TAG, "Error executing work: " + e.message, e)
         Result.failure()
