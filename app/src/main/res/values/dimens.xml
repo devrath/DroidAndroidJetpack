@@ -13,4 +13,6 @@
     <dimen name="person_name_padding">10dp</dimen>
     <dimen name="mutable_live_data_text_top">200dp</dimen>
     <dimen name="mutable_live_data_button_top">100dp</dimen>
+    <dimen name="margin_default">8dp</dimen>
+    <dimen name="margin_big">32dp</dimen>
 </resources>

@@ -87,6 +87,9 @@ dependencies {
     // Paging
     implementation "android.arch.paging:runtime:1.0.0-rc1"
 
+    // WorkManager
+    implementation "androidx.work:work-runtime-ktx:2.5.0"
+
     /** ************************** STANDARD LIBRARIES ************************** **/
 
     /** ******************* UNIT TESTING STANDARD LIBRARIES ******************** **/

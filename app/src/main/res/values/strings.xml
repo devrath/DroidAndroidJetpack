@@ -48,4 +48,6 @@
     <string name="goto_top">Goto Top</string>
     <string name="work_manager">WorkManager</string>
     <string name="work_mng_ex_one">work manager example one</string>
+    <string name="cancel">Cancel</string>
+    <string name="pick_photos">Pick photos</string>
 </resources>
