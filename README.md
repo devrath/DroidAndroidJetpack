@@ -19,6 +19,7 @@
 | [Data Store](https://github.com/devrath/DroidAndroidJetpack/wiki/Data-Store) |
 | [Live Data](https://github.com/devrath/DroidAndroidJetpack/wiki/Live-Data) |
 | [CameraX](https://github.com/devrath/DroidAndroidJetpack/wiki/CameraX) |
+| [Work Manager](https://github.com/devrath/DroidAndroidJetpack/wiki/Workmanager) |
 
  
 <p align="center">
