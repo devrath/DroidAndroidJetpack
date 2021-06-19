@@ -3,22 +3,25 @@ package com.demo.code.paging.fromRemoteApi.repositories
 import androidx.paging.*
 import androidx.room.withTransaction
 import com.demo.code.paging.fromRemoteApi.database.LocalDatabase
-import com.demo.code.paging.fromRemoteApi.models.RedditKeys
-import com.demo.code.paging.fromRemoteApi.models.RedditPost
-import com.demo.code.paging.fromRemoteApi.networking.RedditService
+import com.demo.code.paging.fromRemoteApi.models.PostsKeys
+import com.demo.code.paging.fromRemoteApi.models.FeedPost
+import com.demo.code.paging.fromRemoteApi.networking.RemoteService
 import retrofit2.HttpException
 import java.io.IOException
 
 @OptIn(ExperimentalPagingApi::class)
-class RedditRemoteMediator(
-    private val redditService: RedditService,
+class DataMediator(
+    private val remoteService: RemoteService,
     private val LocalDatabase: LocalDatabase
-) : RemoteMediator<Int, RedditPost>() {
+) : RemoteMediator<Int, FeedPost>() {
+
     override suspend fun load(
         loadType: LoadType,
-        state: PagingState<Int, RedditPost>
+        state: PagingState<Int, FeedPost>
     ): MediatorResult {
+
         return try {
+
             val loadKey = when(loadType){
                 LoadType.REFRESH -> null
                 LoadType.PREPEND -> return MediatorResult.Success(endOfPaginationReached = true)
@@ -28,18 +31,22 @@ class RedditRemoteMediator(
                     getRedditKeys()
                 }
             }
-            val response = redditService.fetchPosts(
+
+            val response = remoteService.fetchPosts(
                 loadSize = state.config.pageSize,
                 after = loadKey?.after,
                 before = loadKey?.before
             )
+
             val listing = response.body()?.data
-            val redditPosts = listing?.children?.map { it.data }
-            if (redditPosts != null) {
+
+            val feedPosts = listing?.children?.map { it.data }
+
+            if (feedPosts != null) {
                 LocalDatabase.withTransaction {
-                    LocalDatabase.redditKeysDao()
-                        .saveRedditKeys(RedditKeys(0, listing.after, listing.before))
-                    LocalDatabase.redditPostsDao().savePosts(redditPosts)
+                    LocalDatabase.keysDao()
+                        .savePostsKeys(PostsKeys(0, listing.after, listing.before))
+                    LocalDatabase.postsDao().savePosts(feedPosts)
                 }
 
             }
@@ -53,8 +60,7 @@ class RedditRemoteMediator(
 
     }
 
-    private suspend fun getRedditKeys(): RedditKeys? {
-        return LocalDatabase.redditKeysDao().getRedditKeys().firstOrNull()
-
+    private suspend fun getRedditKeys(): PostsKeys? {
+        return LocalDatabase.keysDao().getPostsKeys().firstOrNull()
     }
 }

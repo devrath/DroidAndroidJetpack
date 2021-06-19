@@ -4,13 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.demo.code.paging.fromRemoteApi.database.dao.RedditKeysDao
-import com.demo.code.paging.fromRemoteApi.models.RedditKeys
-import com.demo.code.paging.fromRemoteApi.models.RedditPost
-import com.demo.code.paging.fromRemoteApi.database.dao.RedditPostsDao
+import com.demo.code.paging.fromRemoteApi.database.dao.KeysDao
+import com.demo.code.paging.fromRemoteApi.models.PostsKeys
+import com.demo.code.paging.fromRemoteApi.models.FeedPost
+import com.demo.code.paging.fromRemoteApi.database.dao.PostsDao
 
 @Database(
-    entities = [RedditPost::class, RedditKeys::class],
+    entities = [FeedPost::class, PostsKeys::class],
     version = 1,
     exportSchema = false
 )
@@ -18,7 +18,7 @@ abstract class LocalDatabase : RoomDatabase() {
 
     companion object {
 
-        private const val  DATABASE_NAME = "redditclone.db"
+        private const val  DATABASE_NAME = "paging_demo.db"
         private val LOCAL_DATABASE = LocalDatabase::class.java
 
         fun create(context: Context): LocalDatabase {
@@ -27,6 +27,6 @@ abstract class LocalDatabase : RoomDatabase() {
         }
     }
 
-    abstract fun redditPostsDao(): RedditPostsDao
-    abstract fun redditKeysDao(): RedditKeysDao
+    abstract fun postsDao(): PostsDao
+    abstract fun keysDao(): KeysDao
 }

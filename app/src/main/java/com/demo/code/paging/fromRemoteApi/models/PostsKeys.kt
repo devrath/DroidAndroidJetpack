@@ -3,8 +3,8 @@ package com.demo.code.paging.fromRemoteApi.models
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "redditKeys")
-data class RedditKeys(
+@Entity(tableName = "postKeys")
+data class PostsKeys(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     val after: String?,

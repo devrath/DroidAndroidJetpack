@@ -6,24 +6,30 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.demo.code.paging.fromRemoteApi.database.LocalDatabase
-import com.demo.code.paging.fromRemoteApi.models.RedditPost
+import com.demo.code.paging.fromRemoteApi.models.FeedPost
 import com.demo.code.paging.fromRemoteApi.networking.ApiClient
-import com.demo.code.paging.fromRemoteApi.networking.RedditService
+import com.demo.code.paging.fromRemoteApi.networking.RemoteService
 import kotlinx.coroutines.flow.Flow
 
 class Repository(context: Context) {
 
     // Remote API reference
-    private val apiService = ApiClient.getClient().create(RedditService.service)
+    private val apiService = ApiClient.getClient().create(RemoteService.service)
     // Local database reference
-    private val redditDatabase = LocalDatabase.create(context)
+    private val localDatabase = LocalDatabase.create(context)
 
+    /**
+     * @return Flow of Paging data
+     */
     @OptIn(ExperimentalPagingApi::class)
-    fun fetchPosts(): Flow<PagingData<RedditPost>> {
+    fun fetchPosts(): Flow<PagingData<FeedPost>> {
+
         return Pager(
             PagingConfig(pageSize = 10, enablePlaceholders = false, prefetchDistance = 1),
-            remoteMediator = RedditRemoteMediator(apiService, redditDatabase),
-            pagingSourceFactory = { redditDatabase.redditPostsDao().getPosts() }
+            remoteMediator = DataMediator(apiService, localDatabase),
+            pagingSourceFactory = { localDatabase.postsDao().getPosts() }
         ).flow
+
     }
+
 }

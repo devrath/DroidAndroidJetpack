@@ -5,15 +5,15 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
-import com.demo.code.paging.fromRemoteApi.models.RedditPost
+import com.demo.code.paging.fromRemoteApi.models.FeedPost
 
 @Dao
-interface RedditPostsDao {
+interface PostsDao {
 
     @Insert(onConflict = REPLACE)
-    suspend fun savePosts(redditPosts: List<RedditPost>)
+    suspend fun savePosts(feedPosts: List<FeedPost>)
 
-    @Query("SELECT * FROM redditPosts")
-    fun getPosts(): PagingSource<Int, RedditPost>
+    @Query("SELECT * FROM feedPosts")
+    fun getPosts(): PagingSource<Int, FeedPost>
 
 }

@@ -20,7 +20,7 @@
         <Button
             android:id="@+id/pagingFromRemoteApiId"
             style="@style/launchBtnStyle"
-            android:text="@string/paging_from_remote_api"
+            android:text="@string/paging_using_remote_and_local"
             android:visibility="gone" />
 
     </LinearLayout>
