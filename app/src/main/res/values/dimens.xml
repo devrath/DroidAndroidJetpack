@@ -15,4 +15,7 @@
     <dimen name="mutable_live_data_button_top">100dp</dimen>
     <dimen name="margin_default">8dp</dimen>
     <dimen name="margin_big">32dp</dimen>
+    <dimen name="paging_icon_dimen">50dp</dimen>
+    <dimen name="display_margin">20dp</dimen>
+    <dimen name="row_padding">16dp</dimen>
 </resources>

@@ -1,78 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="16dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textStyle="bold"
-        tools:text="Reddit Clone Application"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/score_icon"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:src="@drawable/ic_star"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/text_score_desc"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title" />
-
-    <TextView
-        android:id="@+id/score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        tools:text="80"
-        app:layout_constraintStart_toEndOf="@+id/score_icon"
-        app:layout_constraintTop_toTopOf="@id/score_icon"
-        app:layout_constraintBottom_toBottomOf="@id/score_icon"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.7" />
-
-    <ImageView
-        android:id="@+id/comments_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/ic_comment"
-        android:contentDescription="@string/text_comment_desc"
-        app:layout_constraintStart_toEndOf="@id/guideline"
-        app:layout_constraintTop_toTopOf="@id/score_icon"
-        app:layout_constraintBottom_toBottomOf="@id/score_icon"
-        />
-    <TextView
-        android:id="@+id/comments"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        tools:text="30"
-        app:layout_constraintStart_toEndOf="@id/comments_icon"
-        app:layout_constraintTop_toTopOf="@id/comments_icon"
-        app:layout_constraintBottom_toBottomOf="@id/comments_icon"
-        />
-    <View
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/grey"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/score_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/row_padding"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/displayPicId"
+                android:layout_width="@dimen/paging_icon_dimen"
+                android:layout_height="@dimen/paging_icon_dimen"
+                android:contentDescription="@string/content"
+                app:srcCompat="@drawable/ic_home" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/display_margin"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/displayPicId"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Feed name" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

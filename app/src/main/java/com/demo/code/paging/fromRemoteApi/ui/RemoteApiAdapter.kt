@@ -23,14 +23,10 @@ class RemoteApiAdapter :
     }
 
     class RedditViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val scoreText: TextView = itemView.score
-        private val commentsText: TextView = itemView.comments
         private val titleText: TextView = itemView.title
 
         fun bindPost(feedPost: FeedPost) {
             with(feedPost) {
-                scoreText.text = score.toString()
-                commentsText.text = commentCount.toString()
                 titleText.text = title
             }
         }
