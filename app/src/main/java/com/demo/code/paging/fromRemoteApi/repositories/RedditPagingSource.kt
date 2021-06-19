@@ -1,6 +1,7 @@
 package com.demo.code.paging.fromRemoteApi.repositories
 
 import androidx.paging.PagingSource
+import androidx.paging.PagingState
 import com.demo.code.paging.fromRemoteApi.models.RedditPost
 import com.demo.code.paging.fromRemoteApi.networking.RedditService
 import retrofit2.HttpException
@@ -27,4 +28,8 @@ class RedditPagingSource(private val redditService: RedditService) :
     }
 
     override val keyReuseSupported: Boolean = true
+    override fun getRefreshKey(state: PagingState<String, RedditPost>): String? {
+        val anchorPosition = state.anchorPosition ?: return null
+        return state.closestItemToPosition(anchorPosition)?.key
+    }
 }
