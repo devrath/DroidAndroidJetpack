@@ -13,7 +13,7 @@ import com.google.gson.Gson
 import java.io.IOException
 import java.nio.charset.StandardCharsets
 
-@Database(entities = [(Movie::class)], version = 1)
+@Database(entities = [(Movie::class)], version = 1, exportSchema = false)
 abstract class MovieDatabase : RoomDatabase() {
   abstract fun movieDao(): MovieDao
 

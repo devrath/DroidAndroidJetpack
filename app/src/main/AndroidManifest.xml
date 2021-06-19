@@ -64,7 +64,7 @@
             android:label="@string/paging_from_local_database"
             android:theme="@style/Theme.Code" />
         <activity
-            android:name=".paging.fromRemoteApi.PagingFromRemoteApiActivity"
+            android:name=".paging.fromRemoteApi.ui.PagingFromRemoteApiActivity"
             android:label="@string/paging_from_remote_api"
             android:theme="@style/Theme.Code" />
         <activity

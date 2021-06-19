@@ -50,4 +50,7 @@
     <string name="work_mng_ex_one">work manager example one</string>
     <string name="cancel">Cancel</string>
     <string name="pick_photos">Pick photos</string>
+    <string name="text_retry">Retry</string>
+    <string name="text_score_desc">Score Image</string>
+    <string name="text_comment_desc">Comment Image</string>
 </resources>
