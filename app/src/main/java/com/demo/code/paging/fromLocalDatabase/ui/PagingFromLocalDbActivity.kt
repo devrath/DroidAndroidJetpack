@@ -42,9 +42,9 @@ class PagingFromLocalDbActivity : BaseActivity() {
                                 target: RecyclerView.ViewHolder): Boolean = false
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-                /*(viewHolder as? MovieListAdapter.MovieViewHolder)?.movie?.let {
+                (viewHolder as? MovieListAdapter.MovieViewHolder)?.movie?.let {
                     viewModel.remove(it)
-                }*/
+                }
             }
         }).attachToRecyclerView(binding.movieRecyclerView)
     }

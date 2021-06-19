@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'androidx.navigation.safeargs.kotlin'
     id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -50,6 +51,10 @@ android {
     defaultConfig {
         multiDexEnabled true
     }
+}
+
+androidExtensions {
+    experimental = true
 }
 
 

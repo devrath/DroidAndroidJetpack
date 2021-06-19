@@ -9,7 +9,18 @@ import com.demo.code.paging.fromLocalDatabase.model.Movie
 
 @Dao
 interface MovieDao {
-  
+
+  /*
+   *
+      *
+      *
+      @Query("SELECT * FROM Movie ORDER BY ranking")
+      fun allMovies(): LiveData<List<Movie>>
+      *
+      *
+   --- Instead of Live data we shall replace with a factory that returns the positional data source
+   *
+   */
   @Query("SELECT * FROM Movie ORDER BY ranking")
   fun allMovies(): DataSource.Factory<Int, Movie>
 
