@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_paging.xml" value="0.1" />
         <entry key="app/src/main/res/layout/list_item_movie.xml" value="0.10891590678824721" />
       </map>
     </option>

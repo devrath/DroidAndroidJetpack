@@ -90,7 +90,7 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:1.1.1"
 
     // Paging
-    implementation "android.arch.paging:runtime:1.0.0-rc1"
+    implementation 'androidx.paging:paging-runtime-ktx:3.0.0-alpha06'
 
     // WorkManager
     implementation "androidx.work:work-runtime-ktx:2.5.0"
