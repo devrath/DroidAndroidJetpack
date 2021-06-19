@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.demo.code.R
 import kotlinx.android.synthetic.main.item_loading_state.view.*
 
-class RedditLoadingAdapter(private val retry: () -> Unit) :
-    LoadStateAdapter<RedditLoadingAdapter.LoadingStateViewHolder>() {
+class RemoteApiLoadingAdapter(private val retry: () -> Unit) :
+    LoadStateAdapter<RemoteApiLoadingAdapter.LoadingStateViewHolder>() {
 
     class LoadingStateViewHolder(itemView: View, retry: () -> Unit) :
         RecyclerView.ViewHolder(itemView) {

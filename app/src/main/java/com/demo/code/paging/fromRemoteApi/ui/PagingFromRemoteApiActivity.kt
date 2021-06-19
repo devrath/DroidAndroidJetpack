@@ -11,11 +11,15 @@ import kotlinx.coroutines.launch
 
 class PagingFromRemoteApiActivity : BaseActivity() {
 
+    // Binding: View references
     private lateinit var binding: ActivityPagingFromRemoteApiBinding
 
-    private val redditAdapter = RedditAdapter()
-    private val redditViewModel: RedditViewModel by lazy {
-        ViewModelProvider(this).get(RedditViewModel::class.java)
+    // Adapter: List of items
+    private val adapter = RemoteApiAdapter()
+
+    // viewModel reference
+    private val remoteApiViewModel: RemoteApiViewModel by lazy {
+        ViewModelProvider(this).get(RemoteApiViewModel.thisClass)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,19 +33,24 @@ class PagingFromRemoteApiActivity : BaseActivity() {
 
     private fun fetchPosts() {
         lifecycleScope.launch {
-            redditViewModel.fetchPosts().collectLatest { pagingData ->
-                redditAdapter.submitData(pagingData)
+
+            remoteApiViewModel.fetchPosts().collectLatest { pagingData ->
+                // We get the new data from the flow - We publish the new data to adapter
+                adapter.submitData(pagingData)
             }
         }
-
     }
 
     private fun setupViews() {
         binding.apply {
-            rvPosts.adapter = redditAdapter
-            rvPosts.adapter = redditAdapter.withLoadStateHeaderAndFooter(
-                header = RedditLoadingAdapter { redditAdapter.retry() },
-                footer = RedditLoadingAdapter { redditAdapter.retry() }
+            // Adapter: List of items
+            rvPosts.adapter = adapter
+            // Adapters: Header and Footer item
+            rvPosts.adapter = adapter.withLoadStateHeaderAndFooter(
+                // Header
+                header = RemoteApiLoadingAdapter { adapter.retry() },
+                // Footer
+                footer = RemoteApiLoadingAdapter { adapter.retry() }
             )
         }
     }

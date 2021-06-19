@@ -11,8 +11,8 @@ import com.demo.code.paging.fromRemoteApi.models.RedditPost
 import com.demo.code.paging.fromRemoteApi.utils.DiffUtilCallBack
 import kotlinx.android.synthetic.main.adapter_row.view.*
 
-class RedditAdapter :
-    PagingDataAdapter<RedditPost, RedditAdapter.RedditViewHolder>(DiffUtilCallBack()) {
+class RemoteApiAdapter :
+    PagingDataAdapter<RedditPost, RemoteApiAdapter.RedditViewHolder>(DiffUtilCallBack()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RedditViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_row, parent, false)
         return RedditViewHolder(view)

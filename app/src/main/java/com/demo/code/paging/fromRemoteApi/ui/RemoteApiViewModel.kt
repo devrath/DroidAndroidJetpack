@@ -9,7 +9,12 @@ import com.demo.code.paging.fromRemoteApi.models.RedditPost
 import com.demo.code.paging.fromRemoteApi.repositories.RedditRepo
 import kotlinx.coroutines.flow.Flow
 
-class RedditViewModel(application: Application) : AndroidViewModel(application) {
+class RemoteApiViewModel(application: Application) : AndroidViewModel(application) {
+
+    companion object {
+        val thisClass = RemoteApiViewModel::class.java
+    }
+
     private val redditRepo = RedditRepo(application)
 
     fun fetchPosts(): Flow<PagingData<RedditPost>> {
