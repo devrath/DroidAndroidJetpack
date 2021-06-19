@@ -1,4 +1,4 @@
-package com.demo.code.paging.fromLocalDatabase
+package com.demo.code.paging.fromLocalDatabase.ui
 
 import android.os.Bundle
 import android.view.Menu

@@ -3,9 +3,7 @@ package com.demo.code.paging
 import android.os.Bundle
 import com.demo.code.base.BaseActivity
 import com.demo.code.databinding.ActivityPagingBinding
-import com.demo.code.lifecycle.activities.ExoplayerActivity
-import com.demo.code.navigation.activities.SelectionScreenActivity
-import com.demo.code.paging.fromLocalDatabase.PagingFromLocalDbActivity
+import com.demo.code.paging.fromLocalDatabase.ui.PagingFromLocalDbActivity
 import com.demo.code.paging.fromRemoteApi.PagingFromRemoteApiActivity
 import com.demo.extensions.intent.openActivity
 

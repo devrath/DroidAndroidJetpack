@@ -1,4 +1,4 @@
-package com.demo.code.paging.fromLocalDatabase
+package com.demo.code.paging.fromLocalDatabase.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName

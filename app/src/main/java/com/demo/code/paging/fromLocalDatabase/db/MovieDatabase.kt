@@ -1,4 +1,4 @@
-package com.demo.code.paging.fromLocalDatabase
+package com.demo.code.paging.fromLocalDatabase.db
 
 import android.content.Context
 import android.util.Log
@@ -6,6 +6,9 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
+import com.demo.code.paging.fromLocalDatabase.bgThread
+import com.demo.code.paging.fromLocalDatabase.model.Movie
+import com.demo.code.paging.fromLocalDatabase.model.MovieData
 import com.google.gson.Gson
 import java.io.IOException
 import java.nio.charset.StandardCharsets

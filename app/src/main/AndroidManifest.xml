@@ -60,7 +60,7 @@
             android:label="@string/camera_x"
             android:theme="@style/Theme.Code" />
         <activity
-            android:name=".paging.fromLocalDatabase.PagingFromLocalDbActivity"
+            android:name=".paging.fromLocalDatabase.ui.PagingFromLocalDbActivity"
             android:label="@string/paging_from_local_database"
             android:theme="@style/Theme.Code" />
         <activity

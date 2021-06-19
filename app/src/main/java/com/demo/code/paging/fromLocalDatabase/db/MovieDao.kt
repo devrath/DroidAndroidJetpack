@@ -1,10 +1,11 @@
-package com.demo.code.paging.fromLocalDatabase
+package com.demo.code.paging.fromLocalDatabase.db
 
 import androidx.paging.DataSource
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import com.demo.code.paging.fromLocalDatabase.model.Movie
 
 @Dao
 interface MovieDao {

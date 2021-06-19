@@ -1,12 +1,12 @@
-package com.demo.code.paging.fromLocalDatabase
+package com.demo.code.paging.fromLocalDatabase.ui
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.demo.code.databinding.ListItemMovieBinding
+import com.demo.code.paging.fromLocalDatabase.model.Movie
 
 class MovieListAdapter : PagedListAdapter<Movie, MovieListAdapter.MovieViewHolder>(diffCallback) {
 
