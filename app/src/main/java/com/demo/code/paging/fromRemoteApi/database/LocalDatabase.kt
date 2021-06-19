@@ -14,11 +14,15 @@ import com.demo.code.paging.fromRemoteApi.database.dao.RedditPostsDao
     version = 1,
     exportSchema = false
 )
-abstract class RedditDatabase : RoomDatabase() {
+abstract class LocalDatabase : RoomDatabase() {
+
     companion object {
-        fun create(context: Context): RedditDatabase {
-            val databaseBuilder =
-                Room.databaseBuilder(context, RedditDatabase::class.java, "redditclone.db")
+
+        private const val  DATABASE_NAME = "redditclone.db"
+        private val LOCAL_DATABASE = LocalDatabase::class.java
+
+        fun create(context: Context): LocalDatabase {
+            val databaseBuilder = Room.databaseBuilder(context, LOCAL_DATABASE, DATABASE_NAME)
             return databaseBuilder.build()
         }
     }

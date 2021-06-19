@@ -2,7 +2,7 @@ package com.demo.code.paging.fromRemoteApi.repositories
 
 import androidx.paging.*
 import androidx.room.withTransaction
-import com.demo.code.paging.fromRemoteApi.database.RedditDatabase
+import com.demo.code.paging.fromRemoteApi.database.LocalDatabase
 import com.demo.code.paging.fromRemoteApi.models.RedditKeys
 import com.demo.code.paging.fromRemoteApi.models.RedditPost
 import com.demo.code.paging.fromRemoteApi.networking.RedditService
@@ -12,7 +12,7 @@ import java.io.IOException
 @OptIn(ExperimentalPagingApi::class)
 class RedditRemoteMediator(
     private val redditService: RedditService,
-    private val redditDatabase: RedditDatabase
+    private val LocalDatabase: LocalDatabase
 ) : RemoteMediator<Int, RedditPost>() {
     override suspend fun load(
         loadType: LoadType,
@@ -36,10 +36,10 @@ class RedditRemoteMediator(
             val listing = response.body()?.data
             val redditPosts = listing?.children?.map { it.data }
             if (redditPosts != null) {
-                redditDatabase.withTransaction {
-                    redditDatabase.redditKeysDao()
+                LocalDatabase.withTransaction {
+                    LocalDatabase.redditKeysDao()
                         .saveRedditKeys(RedditKeys(0, listing.after, listing.before))
-                    redditDatabase.redditPostsDao().savePosts(redditPosts)
+                    LocalDatabase.redditPostsDao().savePosts(redditPosts)
                 }
 
             }
@@ -54,7 +54,7 @@ class RedditRemoteMediator(
     }
 
     private suspend fun getRedditKeys(): RedditKeys? {
-        return redditDatabase.redditKeysDao().getRedditKeys().firstOrNull()
+        return LocalDatabase.redditKeysDao().getRedditKeys().firstOrNull()
 
     }
 }

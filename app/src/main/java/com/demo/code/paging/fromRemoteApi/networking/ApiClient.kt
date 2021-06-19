@@ -3,8 +3,10 @@ package com.demo.code.paging.fromRemoteApi.networking
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RedditClient {
+class ApiClient {
+
     companion object {
+
         private const val BASE_URL = "https://www.reddit.com/"
         private var retrofit: Retrofit? = null
 
@@ -17,5 +19,6 @@ class RedditClient {
             }
             return retrofit as Retrofit
         }
+
     }
 }

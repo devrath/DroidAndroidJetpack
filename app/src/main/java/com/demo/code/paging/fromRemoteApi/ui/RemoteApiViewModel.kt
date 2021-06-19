@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.demo.code.paging.fromRemoteApi.models.RedditPost
-import com.demo.code.paging.fromRemoteApi.repositories.RedditRepo
+import com.demo.code.paging.fromRemoteApi.repositories.Repository
 import kotlinx.coroutines.flow.Flow
 
 class RemoteApiViewModel(application: Application) : AndroidViewModel(application) {
@@ -15,7 +15,7 @@ class RemoteApiViewModel(application: Application) : AndroidViewModel(applicatio
         val thisClass = RemoteApiViewModel::class.java
     }
 
-    private val redditRepo = RedditRepo(application)
+    private val redditRepo = Repository(application)
 
     fun fetchPosts(): Flow<PagingData<RedditPost>> {
         return redditRepo.fetchPosts().cachedIn(viewModelScope)

@@ -16,6 +16,20 @@ import kotlinx.android.synthetic.main.item_loading_state.view.*
 class RemoteApiLoadingAdapter(private val retry: () -> Unit) :
     LoadStateAdapter<RemoteApiLoadingAdapter.LoadingStateViewHolder>() {
 
+    override fun onBindViewHolder(holder: LoadingStateViewHolder, loadState: LoadState) {
+        holder.bindState(loadState)
+    }
+
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        loadState: LoadState
+    ): LoadingStateViewHolder {
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_loading_state, parent, false)
+        return LoadingStateViewHolder(view, retry)
+    }
+
+
     class LoadingStateViewHolder(itemView: View, retry: () -> Unit) :
         RecyclerView.ViewHolder(itemView) {
 
@@ -37,21 +51,7 @@ class RemoteApiLoadingAdapter(private val retry: () -> Unit) :
             progressBar.isVisible = loadState is LoadState.Loading
             tvErrorMessage.isVisible = loadState !is LoadState.Loading
             btnRetry.isVisible = loadState !is LoadState.Loading
-
         }
 
-    }
-
-    override fun onBindViewHolder(holder: LoadingStateViewHolder, loadState: LoadState) {
-        holder.bindState(loadState)
-    }
-
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        loadState: LoadState
-    ): LoadingStateViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_loading_state, parent, false)
-        return LoadingStateViewHolder(view, retry)
     }
 }
