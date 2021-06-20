@@ -1,4 +1,4 @@
-package com.demo.code.paging.usingRemoteAndLocalSource.repositories
+package com.demo.code.paging.usingRemoteSource.repositories
 
 import androidx.paging.*
 import androidx.room.withTransaction

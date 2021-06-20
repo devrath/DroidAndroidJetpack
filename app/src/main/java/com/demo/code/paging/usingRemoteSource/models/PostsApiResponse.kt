@@ -1,4 +1,4 @@
-package com.demo.code.paging.usingRemoteAndLocalSource.models
+package com.demo.code.paging.usingRemoteSource.models
 
 import com.demo.code.paging.usingRemoteSource.models.PostsListing
 

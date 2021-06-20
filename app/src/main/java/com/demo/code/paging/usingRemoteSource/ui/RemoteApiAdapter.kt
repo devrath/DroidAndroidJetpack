@@ -1,4 +1,4 @@
-package com.demo.code.paging.usingRemoteAndLocalSource.ui
+package com.demo.code.paging.usingRemoteSource.ui
 
 import android.view.LayoutInflater
 import android.view.View

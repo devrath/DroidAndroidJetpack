@@ -1,4 +1,4 @@
-package com.demo.code.paging.usingRemoteAndLocalSource.database
+package com.demo.code.paging.usingRemoteSource.database
 
 import android.content.Context
 import androidx.room.Database
@@ -8,7 +8,6 @@ import com.demo.code.paging.usingRemoteSource.database.dao.KeysDao
 import com.demo.code.paging.usingRemoteSource.models.PostsKeys
 import com.demo.code.paging.usingRemoteSource.models.FeedPost
 import com.demo.code.paging.usingRemoteSource.database.dao.PostsDao
-import com.demo.code.paging.usingRemoteSource.database.LocalDatabase
 
 @Database(
     entities = [FeedPost::class, PostsKeys::class],

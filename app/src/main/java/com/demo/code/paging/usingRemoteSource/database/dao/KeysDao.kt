@@ -1,4 +1,4 @@
-package com.demo.code.paging.usingRemoteAndLocalSource.database.dao
+package com.demo.code.paging.usingRemoteSource.database.dao
 
 import androidx.room.Dao
 import androidx.room.Insert

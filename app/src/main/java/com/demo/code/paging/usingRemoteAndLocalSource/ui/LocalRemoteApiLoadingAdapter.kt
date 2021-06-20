@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.demo.code.R
 import kotlinx.android.synthetic.main.item_loading_state.view.*
 
-class RemoteApiLoadingAdapter(private val retry: () -> Unit) :
-    LoadStateAdapter<RemoteApiLoadingAdapter.LoadingStateViewHolder>() {
+class LocalRemoteApiLoadingAdapter(private val retry: () -> Unit) :
+    LoadStateAdapter<LocalRemoteApiLoadingAdapter.LoadingStateViewHolder>() {
 
     override fun onBindViewHolder(holder: LoadingStateViewHolder, loadState: LoadState) {
         holder.bindState(loadState)

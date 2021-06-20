@@ -1,4 +1,4 @@
-package com.demo.code.paging.usingRemoteAndLocalSource.utils
+package com.demo.code.paging.usingRemoteSource.utils
 
 import androidx.recyclerview.widget.DiffUtil
 import com.demo.code.paging.usingRemoteSource.models.FeedPost

@@ -1,7 +1,6 @@
-package com.demo.code.paging.usingRemoteAndLocalSource.networking
+package com.demo.code.paging.usingRemoteSource.networking
 
 import com.demo.code.paging.usingRemoteSource.models.PostsApiResponse
-import com.demo.code.paging.usingRemoteSource.networking.RemoteService
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
