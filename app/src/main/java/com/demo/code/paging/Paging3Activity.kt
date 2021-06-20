@@ -3,8 +3,8 @@ package com.demo.code.paging
 import android.os.Bundle
 import com.demo.code.base.BaseActivity
 import com.demo.code.databinding.ActivityPagingBinding
-import com.demo.code.paging.fromLocalDatabase.ui.PagingFromLocalDbActivity
-import com.demo.code.paging.fromRemoteApi.ui.PagingFromRemoteApiActivity
+import com.demo.code.paging.usingLocalSource.ui.PagingFromLocalDbActivity
+import com.demo.code.paging.usingRemoteAndLocalSource.ui.PagingFromRemoteApiActivity
 import com.demo.extensions.intent.openActivity
 
 class Paging3Activity : BaseActivity() {

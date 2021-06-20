@@ -60,11 +60,11 @@
             android:label="@string/camera_x"
             android:theme="@style/Theme.Code" />
         <activity
-            android:name=".paging.fromLocalDatabase.ui.PagingFromLocalDbActivity"
+            android:name=".paging.usingLocalSource.ui.PagingFromLocalDbActivity"
             android:label="@string/paging_from_local_database"
             android:theme="@style/Theme.Code" />
         <activity
-            android:name=".paging.fromRemoteApi.ui.PagingFromRemoteApiActivity"
+            android:name=".paging.usingRemoteAndLocalSource.ui.PagingFromRemoteApiActivity"
             android:label="@string/paging_using_remote_and_local"
             android:theme="@style/Theme.Code" />
         <activity
