@@ -5,14 +5,14 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.demo.code.R
 import com.demo.code.base.BaseActivity
-import com.demo.code.databinding.ActivityPagingFromRemoteApiBinding
+import com.demo.code.databinding.ActivityPagingFromLocalRemoteApiBinding
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
-class PagingFromRemoteApiActivity : BaseActivity() {
+class PagingFromLocalRemoteApiActivity : BaseActivity() {
 
     // Binding: View references
-    private lateinit var binding: ActivityPagingFromRemoteApiBinding
+    private lateinit var binding: ActivityPagingFromLocalRemoteApiBinding
 
     // Adapter: List of items
     private val adapter = RemoteApiAdapter()
@@ -25,7 +25,7 @@ class PagingFromRemoteApiActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.AppTheme)
         super.onCreate(savedInstanceState)
-        binding = ActivityPagingFromRemoteApiBinding.inflate(layoutInflater)
+        binding = ActivityPagingFromLocalRemoteApiBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupViews()
         fetchPosts()

@@ -18,7 +18,7 @@
             android:text="Example" />
 
         <Button
-            android:id="@+id/pagingFromRemoteApiId"
+            android:id="@+id/pagingFromLocalRemoteApiId"
             style="@style/launchBtnStyle"
             android:text="@string/paging_using_remote_and_local"
             android:visibility="gone" />

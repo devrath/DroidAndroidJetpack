@@ -4,7 +4,7 @@ import android.os.Bundle
 import com.demo.code.base.BaseActivity
 import com.demo.code.databinding.ActivityPagingBinding
 import com.demo.code.paging.usingLocalSource.ui.PagingFromLocalDbActivity
-import com.demo.code.paging.usingRemoteAndLocalSource.ui.PagingFromRemoteApiActivity
+import com.demo.code.paging.usingRemoteAndLocalSource.ui.PagingFromLocalRemoteApiActivity
 import com.demo.extensions.intent.openActivity
 
 class Paging3Activity : BaseActivity() {
@@ -21,7 +21,10 @@ class Paging3Activity : BaseActivity() {
                 openActivity(PagingFromLocalDbActivity::class.java)
             }
             this.pagingFromRemoteApiId.setOnClickListener {
-                openActivity(PagingFromRemoteApiActivity::class.java)
+                openActivity(PagingFromLocalDbActivity::class.java)
+            }
+            this.pagingFromLocalRemoteApiId.setOnClickListener {
+                openActivity(PagingFromLocalRemoteApiActivity::class.java)
             }
         }
     }

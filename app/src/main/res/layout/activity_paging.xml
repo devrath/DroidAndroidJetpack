@@ -20,6 +20,11 @@
         <Button
             android:id="@+id/pagingFromRemoteApiId"
             style="@style/launchBtnStyle"
+            android:text="@string/paging_from_remote_source" />
+
+        <Button
+            android:id="@+id/pagingFromLocalRemoteApiId"
+            style="@style/launchBtnStyle"
             android:text="@string/paging_using_remote_and_local" />
 
     </LinearLayout>

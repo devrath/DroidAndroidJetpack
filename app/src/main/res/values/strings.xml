@@ -44,6 +44,7 @@
     <string name="camera_x">Camera X</string>
     <string name="paging_using_remote_and_local">Using remote and local source</string>
     <string name="paging_from_local_database">Using local source</string>
+    <string name="paging_from_remote_source">Using remote source</string>
     <string name="paging_from_api">Paging from api</string>
     <string name="goto_bottom">Goto Bottom</string>
     <string name="goto_top">Goto Top</string>
