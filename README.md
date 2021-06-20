@@ -8,7 +8,8 @@
 <a><img src="https://img.shields.io/badge/Jetpack%20Tool-Data%20Store-gold?style=for-the-badge&logo=tools"></a>  
 <a><img src="https://img.shields.io/badge/Jetpack%20Tool-Live%20Data-brown?style=for-the-badge&logo=tools"></a>  
 <a><img src="https://img.shields.io/badge/Jetpack%20Tool-CameraX-pink?style=for-the-badge&logo=camera"></a>  
-<a><img src="https://img.shields.io/badge/Jetpack%20Tool-Work%20Manager-deeppink?style=for-the-badge&logo=camera"></a>  
+<a><img src="https://img.shields.io/badge/Jetpack%20Tool-Work%20Manager-deeppink?style=for-the-badge&logo=camera"></a>
+<a><img src="https://img.shields.io/badge/Jetpack%20Tool-Paging3-deepskyblue?style=for-the-badge&logo=camera"></a> 
 </p>
 
 
@@ -21,6 +22,7 @@
 | [Live Data](https://github.com/devrath/DroidAndroidJetpack/wiki/Live-Data) |
 | [CameraX](https://github.com/devrath/DroidAndroidJetpack/wiki/CameraX) |
 | [Work Manager](https://github.com/devrath/DroidAndroidJetpack/wiki/Workmanager) |
+| [Paging3](https://github.com/devrath/DroidAndroidJetpack/wiki/Paging-Library) |
 
  
 <p align="center">
