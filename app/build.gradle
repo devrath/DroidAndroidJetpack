@@ -4,6 +4,8 @@ plugins {
     id 'androidx.navigation.safeargs.kotlin'
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
+    id 'com.google.protobuf'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -42,6 +44,9 @@ android {
     }
     defaultConfig {
         multiDexEnabled true
+    }
+    kapt {
+        includeCompileClasspath false
     }
 
     configurations {
@@ -110,5 +115,15 @@ dependencies {
     /** ****************** Modules ****************** **/
     implementation project (":app:extensions")
     /** ****************** Modules ****************** **/
+
+    // Proto DataStore
+    implementation "androidx.datastore:datastore-core:1.0.0-alpha05"
+    implementation "com.google.protobuf:protobuf-javalite:3.11.0"
+
+    // Hilt DI
+    implementation "com.google.dagger:hilt-android:2.28.3-alpha"
+    kapt "com.google.dagger:hilt-android-compiler:2.28.3-alpha"
+    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02'
+    kapt 'androidx.hilt:hilt-compiler:1.0.0-alpha02'
 
 }

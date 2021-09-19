@@ -17,7 +17,7 @@ class DataManager(val context: Context) {
 
     // Create the dataStore and give it a name same as shared preferences
     val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = DATA_STORE_NAME)
-    
+
     // Create some keys we will use them to store and retrieve the data
     companion object {
         val DATA_KEY_KEY = stringPreferencesKey(DATA_KEY)
