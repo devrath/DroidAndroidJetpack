@@ -15,7 +15,7 @@ ext {
             retrofit_version             : '2.9.0',
             android_x_legacy_version    : '1.0.0',
             android_paging_3_version    : '3.0.1',
-            ds_pref_version             : '1.0.0-alpha01',
+            ds_pref_version             : '1.0.0',
             camerax_version             : '1.0.0',
             camerax_extension           : '1.0.0-alpha24',
             moshi_version               : '1.11.0',

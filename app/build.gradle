@@ -32,6 +32,7 @@ android {
     }
     packagingOptions {
         pickFirst  '**'
+        exclude 'META-INF/MANIFEST.MF'
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -109,4 +110,5 @@ dependencies {
     /** ****************** Modules ****************** **/
     implementation project (":app:extensions")
     /** ****************** Modules ****************** **/
+
 }
