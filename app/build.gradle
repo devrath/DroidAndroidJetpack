@@ -31,16 +31,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     packagingOptions {
-        exclude 'META-INF/proguard/androidx-annotations.pro'
-        exclude 'META-INF/gradle/incremental.annotation.processors'
-        exclude 'META-INF/DEPENDENCIES'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/license.txt'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/NOTICE.txt'
-        exclude 'META-INF/notice.txt'
-        exclude 'META-INF/ASL2.0'
+        pickFirst  '**'
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -50,6 +41,13 @@ android {
     }
     defaultConfig {
         multiDexEnabled true
+    }
+
+    configurations {
+        implementation {
+            exclude group: 'org.jetbrains'
+            exclude module:'annotations'
+        }
     }
 }
 
@@ -76,27 +74,26 @@ dependencies {
     implementation libraries.preferencesLib
     implementation libraries.cameraxLib
 
-    implementation 'androidx.core:core-ktx:1.5.0'
-    implementation "com.squareup.moshi:moshi-kotlin:1.11.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
-    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+    implementation libraries.moshiLib
+    implementation libraries.moshiRetrofitLib
 
     // Room
-    def room_version = "2.3.0"
-    implementation "androidx.room:room-ktx:$room_version"
-    kapt "androidx.room:room-compiler:$room_version"
+    implementation libraries.roomLib
 
     // ViewModel and LiveData
-    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation libraries.lifeCycleExtensionLib
 
     // Paging
-    implementation 'androidx.paging:paging-runtime-ktx:3.0.0'
+    implementation libraries.paging3Lib
 
     // WorkManager
-    implementation "androidx.work:work-runtime-ktx:2.5.0"
+    implementation libraries.workRuntimeLib
 
     // card view
-    implementation "androidx.cardview:cardview:1.0.0"
+    implementation libraries.cardViewLib
+
+    // multidex
+    implementation libraries.multidexLib
 
     /** ************************** STANDARD LIBRARIES ************************** **/
 

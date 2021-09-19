@@ -5,22 +5,27 @@ ext {
             material_version            : '1.3.0',
             constraintlayout_version    : '2.0.4',
             appcompat_version           : '1.2.0',
-            corektx_version             : '1.3.2',
+            corektx_version             : '1.6.0',
             lifecycle_version           : '2.3.0',
             glide_version               : '4.12.0',
             exo_player_version          : '2.13.2',
             koin_version                : '2.0.1',
-            android_x_version           : '2.3.0',
+            android_x_version           : '2.3.1',
             coroutines_version          : '1.4.2',
-            retrofit_version            : '2.9.0',
+            retrofit_version             : '2.9.0',
             android_x_legacy_version    : '1.0.0',
-            android_paging_3_version    : '3.0.0-beta02',
+            android_paging_3_version    : '3.0.1',
             ds_pref_version             : '1.0.0-alpha01',
             camerax_version             : '1.0.0',
             camerax_extension           : '1.0.0-alpha24',
+            moshi_version               : '1.11.0',
+            retrofit_moshi_version       : '2.9.0',
+            room_version                : '2.3.0',
+            lifecycle_extension_version : '1.1.1',
+            work_manager_version        : '2.6.0',
+            cerd_view_version           : '1.0.0',
+            multidex_version_version    : '1.0.3',
     ]
-
-
 
     /** Use Implementation **/
     libraries = [
@@ -80,7 +85,31 @@ ext {
                     "androidx.camera:camera-camera2:${versions.camerax_version}",
                     "androidx.camera:camera-extensions:${versions.camerax_extension}",
             ],
+            moshiLib : [
+                    "com.squareup.moshi:moshi-kotlin:${versions.moshi_version}",
+            ],
+            moshiRetrofitLib : [
+                    "com.squareup.retrofit2:converter-moshi:${versions.retrofit_moshi_version}",
+            ],
+            roomLib : [
+                    "androidx.room:room-ktx:${versions.room_version}",
+                    "androidx.room:room-compiler:${versions.room_version}",
+            ],
+            lifeCycleExtensionLib : [
+                    "android.arch.lifecycle:extensions:${versions.lifecycle_extension_version}",
+            ],
+            workRuntimeLib : [
+                    "androidx.work:work-runtime-ktx:${versions.work_manager_version}",
+            ],
+            cardViewLib : [
+                    "androidx.cardview:cardview:${versions.cerd_view_version}",
+            ],
+            multidexLib : [
+                    "com.android.support:multidex:${versions.multidex_version}",
+            ],
+
     ]
+
 
     /** Use androidTestImplementation **/
     androidTestLibraries = [
