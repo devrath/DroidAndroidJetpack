@@ -5,6 +5,7 @@ import com.demo.code.base.BaseActivity
 import com.demo.code.databinding.ActivityPagingBinding
 import com.demo.code.databinding.ActivityWorkManagerBinding
 import com.demo.code.workmanager.exampleone.WorkManagerExampleOneActivity
+import com.demo.code.workmanager.simpleworker.SimpleWorkerActivity
 import com.demo.extensions.intent.openActivity
 
 class WorkManagerActivity  : BaseActivity() {
@@ -17,6 +18,9 @@ class WorkManagerActivity  : BaseActivity() {
         setContentView(binding.root)
 
         binding.apply {
+            this.simpleWorkerId.setOnClickListener {
+                openActivity(SimpleWorkerActivity::class.java)
+            }
             this.workManagerId.setOnClickListener {
                 openActivity(WorkManagerExampleOneActivity::class.java)
             }

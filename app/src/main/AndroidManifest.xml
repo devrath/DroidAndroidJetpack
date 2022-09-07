@@ -79,7 +79,10 @@
             android:name=".paging.usingRemoteSource.ui.PagingFromRemoteApiActivity"
             android:label="@string/paging_from_remote_source"
             android:theme="@style/Theme.Code" />
-
+        <activity
+            android:name=".workmanager.simpleworker.SimpleWorkerActivity"
+            android:label="@string/simple_worker"
+            android:theme="@style/Theme.Code" />
     </application>
 
 </manifest>

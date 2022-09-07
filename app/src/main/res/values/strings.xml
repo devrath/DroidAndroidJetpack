@@ -56,4 +56,5 @@
     <string name="text_score_desc">Score Image</string>
     <string name="text_comment_desc">Comment Image</string>
     <string name="content">content</string>
+    <string name="simple_worker">Simple Worker</string>
 </resources>

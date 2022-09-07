@@ -13,6 +13,11 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/simpleWorkerId"
+            style="@style/launchBtnStyle"
+            android:text="@string/simple_worker" />
+
+        <Button
             android:id="@+id/workManagerId"
             style="@style/launchBtnStyle"
             android:text="Example" />

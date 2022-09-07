@@ -4,10 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_paging.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_simple_worker.xml" value="0.21920289855072464" />
+        <entry key="app/src/main/res/layout/activity_work_manager.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_work_manager_example_one.xml" value="0.12273550724637682" />
         <entry key="app/src/main/res/layout/list_item_movie.xml" value="0.10891590678824721" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
