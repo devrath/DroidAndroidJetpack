@@ -83,6 +83,10 @@
             android:name=".workmanager.simpleworker.SimpleWorkerActivity"
             android:label="@string/simple_worker"
             android:theme="@style/Theme.Code" />
+        <activity
+            android:name=".workmanager.chainingworker.ChainingWorkerActivity"
+            android:label="@string/chaining_worker"
+            android:theme="@style/Theme.Code" />
     </application>
 
 </manifest>

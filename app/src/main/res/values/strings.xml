@@ -57,4 +57,5 @@
     <string name="text_comment_desc">Comment Image</string>
     <string name="content">content</string>
     <string name="simple_worker">Simple Worker</string>
+    <string name="chaining_worker">Chaining Worker</string>
 </resources>

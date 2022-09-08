@@ -18,6 +18,11 @@
             android:text="@string/simple_worker" />
 
         <Button
+            android:id="@+id/chainingWorkerId"
+            style="@style/launchBtnStyle"
+            android:text="@string/chaining_worker" />
+
+        <Button
             android:id="@+id/workManagerId"
             style="@style/launchBtnStyle"
             android:text="Example" />

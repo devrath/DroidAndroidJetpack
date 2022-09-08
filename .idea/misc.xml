@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_chain_worker.xml" value="0.21920289855072464" />
         <entry key="app/src/main/res/layout/activity_paging.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_simple_worker.xml" value="0.21920289855072464" />
         <entry key="app/src/main/res/layout/activity_work_manager.xml" value="0.335" />
